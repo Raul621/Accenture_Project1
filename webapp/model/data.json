@@ -1,0 +1,1824 @@
+{
+    "bRestartVisibility": false,
+    "bNotEditableSummaryFields": false,
+    "bNotEditableSummaryFields3": false,
+    "bEnableSummaryFields": false,
+    "partNumber": "",
+    "partNumberValid": false,
+    "partNumberEnabled": false,
+    "inputVisible": false,
+    "KIEVFAG":"XE",
+    "BBG":"BBG",
+    "wahrung":"",
+    "selected1_5":"",
+    "Step15SelectedDate":"",
+    "inputStep21":"",
+    "KIEVFAGLIST": [
+    {"key": "XE", "value": "XE"},
+    {"key": "EA", "value": "EA"},
+    {"key": "EE", "value": "EE"},
+    {"key": "EF", "value": "EF"},
+    {"key": "EP", "value": "EP"},
+    {"key": "ES", "value": "ES"},
+    {"key": "EV", "value": "EV"}
+    ],
+    "Currency":"",
+    "CURRENCIES": [
+        { "key": "EUR","value": "EUR European Euro"},
+        { "key": "USD","value": "USD United States Dollar" },
+        { "key": "JPY","value": "JPY Japanese Yen" },
+        { "key": "GBP","value": "GBP British Pound" },
+        { "key": "AUD","value": "AUD Australian Dollar" },
+        { "key": "CAD","value": "CAD Canadian Dollar" },
+        { "key": "CHF","value": "CHF Swiss Franc" },
+        { "key": "CNY","value": "CNY Chinese Yuan" },
+        { "key": "SEK","value": "SEK Swedish Krona" },
+        { "key": "NZD","value": "NZD New Zealand Dollar" }
+    ],
+    "TextStandortOptions":[
+        { "key": "A115 [Versuchsteilelager Parsdorf]","value": "A115 [Versuchsteilelager Parsdorf]" },
+        { "key": "C5 [ILL Steyr]","value": "C5 [ILL Steyr]" }
+    ],
+    "Wizard": {
+        "Step2CostCenter": "",
+        "Step3Verwendung": "",
+        "Step4SelectedValue": "",
+        "Step123SelectedValue": "",
+        "Step124SelectedValue": "",
+        "Step5SelectedValue": "",
+        "Step51SelectedValue": "",
+        "Step51Values":"",
+        "pwErstellenEnabled":"true",
+        "Step51SelectedUser":{
+            "QX": "",
+            "Lastname": "",
+            "Firstname": "",
+            "Department": "",
+            "Email": ""
+        },
+        "Step5Verwender": {
+            "QX": "",
+            "Lastname": "",
+            "Firstname": "",
+            "Department": "",
+            "Email": ""
+        },
+        "Step5Option2Verwender": {
+            "QX": "",
+            "Lastname": "",
+            "Firstname": "",
+            "Department": "",
+            "Email": ""
+        },
+        "CurrentLoggedOnUser": {
+            "QX": "",
+            "Lastname": "",
+            "Firstname": "",
+            "Department": "",
+            "Email": ""
+        },"Step7SelectedExternalUser": {
+            "QX": "",
+            "Lastname": "",
+            "Firstname": "",
+            "Department": "",
+            "Email": "",
+            "PhoneNr": ""
+        },"Step15SelectedInternalUser": {
+            "QX": "",
+            "Lastname": "",
+            "Firstname": "",
+            "Department": "",
+            "Email": "",
+            "PhoneNr": ""
+        },
+        "Step7Opt2SelectedInternalUser": {
+            "QX": "",
+            "Lastname": "",
+            "Firstname": "",
+            "Department": "",
+            "Email": "",
+            "PhoneNr": ""
+        },
+        "Step7SelectedInternalUserStandort": {
+            "Bauort": "",
+            "Standorteill": "",
+            "Sup_Cust_nr": ""
+        }, "Step7SelectedExternalReceiver": {
+            "Sup_Cust_nr": "",
+            "Department": "",
+            "Street": "",
+            "Land/PLZ/Ort": ""
+        }, "Step15SelectedExternalReceiver": {
+            "Sup_Cust_nr": "",
+            "Department": "",
+            "Street": "",
+            "Land/PLZ/Ort": ""
+        },  "Step8SelectedDeliveryDetails": {
+            "SelectedText": "",
+            "SelectedDate": ""
+        },"Step9SelectedUser": {
+            "QX": "",
+            "Lastname": "",
+            "Firstname": "",
+            "Department": "",
+            "Email": ""
+        },"Step17SelectedUser": {
+            "QX": "",
+            "Lastname": "",
+            "Firstname": "",
+            "Department": "",
+            "Email": ""
+        },"Step1_2TextValue": ""
+        ,"Step1_5TextValue": "",
+         "Step5SelectedDeliveryDetails": {
+            "SelectedText": "",
+            "SelectedDate": ""
+        },"Step51SelectedInternalUserStandort": {
+            "Bauort": "",
+            "Standorteill": "",
+            "Sup_Cust_nr": ""
+        }
+    },
+    "AuthorizationSet": {
+        "__metadata": {
+            "id": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_AUTH_NONBBA_SRV/AuthorizationSet('QXZ3UF5')",
+            "uri": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_AUTH_NONBBA_SRV/AuthorizationSet('QXZ3UF5')",
+            "type": "BMW.APS_NEXT_AUTH_NONBBA_SRV.Authorization"
+        },
+        "Lastname": "Turc",
+        "Firstname": "Raul Andrei",
+        "Department": "FG-412",
+        "Email": "Raul-Andrei-Turc@partner.bmw.de",
+        "QX": "QXZ3UF5",
+        "Role": "1",
+        "Phone": ""
+    },
+    "Derivate_Baukasten_ProjectSet": [
+        {
+            "__metadata": {
+                "id": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/Derivate_Baukasten_ProjectSet(Derivate='E89%20SB%2FWE',Baukaste='',Project='PA026%20-%20E89%20SB%2FWE')",
+                "uri": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/Derivate_Baukasten_ProjectSet(Derivate='E89%20SB%2FWE',Baukaste='',Project='PA026%20-%20E89%20SB%2FWE')",
+                "type": "BMW.APS_NEXT_SRV_VH_SRV.Derivate_Baukasten_Project"
+            },
+            "Derivate": "E89 SB/WE",
+            "Baukaste": "",
+            "Project": "PA026 - E89 SB/WE",
+            "prj_nr": "PA026"
+        },
+        {
+            "__metadata": {
+                "id": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/Derivate_Baukasten_ProjectSet(Derivate='Messebetreuung%20Concept%20Vehicles%202.Teil',Baukaste='',Project='PA060%20-%20Messebetreuung%20Concept%20Vehicles%202.Teil')",
+                "uri": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/Derivate_Baukasten_ProjectSet(Derivate='Messebetreuung%20Concept%20Vehicles%202.Teil',Baukaste='',Project='PA060%20-%20Messebetreuung%20Concept%20Vehicles%202.Teil')",
+                "type": "BMW.APS_NEXT_SRV_VH_SRV.Derivate_Baukasten_Project"
+            },
+            "Derivate": "Messebetreuung Concept Vehicles 2.Teil",
+            "Baukaste": "",
+            "Project": "PA060 - Messebetreuung Concept Vehicles 2.Teil",
+            "prj_nr": "PA060"
+        },
+        {
+            "__metadata": {
+                "id": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/Derivate_Baukasten_ProjectSet(Derivate='G01',Baukaste='',Project='PA070%20-%20G01')",
+                "uri": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/Derivate_Baukasten_ProjectSet(Derivate='G01',Baukaste='',Project='PA070%20-%20G01')",
+                "type": "BMW.APS_NEXT_SRV_VH_SRV.Derivate_Baukasten_Project"
+            },
+            "Derivate": "G01",
+            "Baukaste": "",
+            "Project": "PA070 - G01",
+            "prj_nr": "PA070"
+        },
+        {
+            "__metadata": {
+                "id": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/Derivate_Baukasten_ProjectSet(Derivate='F15%20WE',Baukaste='',Project='PA071%20-%20F15%20WE')",
+                "uri": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/Derivate_Baukasten_ProjectSet(Derivate='F15%20WE',Baukaste='',Project='PA071%20-%20F15%20WE')",
+                "type": "BMW.APS_NEXT_SRV_VH_SRV.Derivate_Baukasten_Project"
+            },
+            "Derivate": "F15 WE",
+            "Baukaste": "",
+            "Project": "PA071 - F15 WE",
+            "prj_nr": "PA071"
+        },
+        {
+            "__metadata": {
+                "id": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/Derivate_Baukasten_ProjectSet(Derivate='F15%20Motoren',Baukaste='',Project='PA075%20-%20F15%20Motoren')",
+                "uri": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/Derivate_Baukasten_ProjectSet(Derivate='F15%20Motoren',Baukaste='',Project='PA075%20-%20F15%20Motoren')",
+                "type": "BMW.APS_NEXT_SRV_VH_SRV.Derivate_Baukasten_Project"
+            },
+            "Derivate": "F15 Motoren",
+            "Baukaste": "",
+            "Project": "PA075 - F15 Motoren",
+            "prj_nr": "PA075"
+        },
+        {
+            "__metadata": {
+                "id": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/Derivate_Baukasten_ProjectSet(Derivate='F56%20Produktsubstanzpauschale',Baukaste='',Project='PA078%20-%20F56%20Produktsubstanzpauschale')",
+                "uri": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/Derivate_Baukasten_ProjectSet(Derivate='F56%20Produktsubstanzpauschale',Baukaste='',Project='PA078%20-%20F56%20Produktsubstanzpauschale')",
+                "type": "BMW.APS_NEXT_SRV_VH_SRV.Derivate_Baukasten_Project"
+            },
+            "Derivate": "F56 Produktsubstanzpauschale",
+            "Baukaste": "",
+            "Project": "PA078 - F56 Produktsubstanzpauschale",
+            "prj_nr": "PA078"
+        },
+        {
+            "__metadata": {
+                "id": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/Derivate_Baukasten_ProjectSet(Derivate='LU%20Backbone',Baukaste='',Project='PA079%20-%20LU%20Backbone')",
+                "uri": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/Derivate_Baukasten_ProjectSet(Derivate='LU%20Backbone',Baukaste='',Project='PA079%20-%20LU%20Backbone')",
+                "type": "BMW.APS_NEXT_SRV_VH_SRV.Derivate_Baukasten_Project"
+            },
+            "Derivate": "LU Backbone",
+            "Baukaste": "",
+            "Project": "PA079 - LU Backbone",
+            "prj_nr": "PA079"
+        },
+        {
+            "__metadata": {
+                "id": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/Derivate_Baukasten_ProjectSet(Derivate='F55%20Produktsubstanzpauschale',Baukaste='',Project='PA081%20-%20F55%20Produktsubstanzpauschale')",
+                "uri": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/Derivate_Baukasten_ProjectSet(Derivate='F55%20Produktsubstanzpauschale',Baukaste='',Project='PA081%20-%20F55%20Produktsubstanzpauschale')",
+                "type": "BMW.APS_NEXT_SRV_VH_SRV.Derivate_Baukasten_Project"
+            },
+            "Derivate": "F55 Produktsubstanzpauschale",
+            "Baukaste": "",
+            "Project": "PA081 - F55 Produktsubstanzpauschale",
+            "prj_nr": "PA081"
+        },
+        {
+            "__metadata": {
+                "id": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/Derivate_Baukasten_ProjectSet(Derivate='Joy%205dr%20Strategischer%20Vorhalt',Baukaste='',Project='PA094%20-%20Joy%205dr%20Strategischer%20Vorhalt')",
+                "uri": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/Derivate_Baukasten_ProjectSet(Derivate='Joy%205dr%20Strategischer%20Vorhalt',Baukaste='',Project='PA094%20-%20Joy%205dr%20Strategischer%20Vorhalt')",
+                "type": "BMW.APS_NEXT_SRV_VH_SRV.Derivate_Baukasten_Project"
+            },
+            "Derivate": "Joy 5dr Strategischer Vorhalt",
+            "Baukaste": "",
+            "Project": "PA094 - Joy 5dr Strategischer Vorhalt",
+            "prj_nr": "PA094"
+        },
+        {
+            "__metadata": {
+                "id": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/Derivate_Baukasten_ProjectSet(Derivate='F16',Baukaste='',Project='PA111%20-%20F16')",
+                "uri": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/Derivate_Baukasten_ProjectSet(Derivate='F16',Baukaste='',Project='PA111%20-%20F16')",
+                "type": "BMW.APS_NEXT_SRV_VH_SRV.Derivate_Baukasten_Project"
+            },
+            "Derivate": "F16",
+            "Baukaste": "",
+            "Project": "PA111 - F16",
+            "prj_nr": "PA111"
+        },
+        {
+            "__metadata": {
+                "id": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/Derivate_Baukasten_ProjectSet(Derivate='LU%20Motoren%20nach%20SOP',Baukaste='',Project='PA112%20-%20LU%20Motoren%20nach%20SOP')",
+                "uri": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/Derivate_Baukasten_ProjectSet(Derivate='LU%20Motoren%20nach%20SOP',Baukaste='',Project='PA112%20-%20LU%20Motoren%20nach%20SOP')",
+                "type": "BMW.APS_NEXT_SRV_VH_SRV.Derivate_Baukasten_Project"
+            },
+            "Derivate": "LU Motoren nach SOP",
+            "Baukaste": "",
+            "Project": "PA112 - LU Motoren nach SOP",
+            "prj_nr": "PA112"
+        }
+    ],
+    "MT_BBG_VorserieSet": [
+        {
+            "__metadata": {
+                "id": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/MT_BBG_VorserieSet(MT='',BBG='AP',Vorserie='')",
+                "uri": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/MT_BBG_VorserieSet(MT='',BBG='AP',Vorserie='')",
+                "type": "BMW.APS_NEXT_SRV_VH_SRV.MT_BBG_Vorserie"
+            },
+            "MT": "",
+            "BBG": "AP",
+            "Vorserie": ""
+        },
+        {
+            "__metadata": {
+                "id": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/MT_BBG_VorserieSet(MT='',BBG='BBG',Vorserie='')",
+                "uri": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/MT_BBG_VorserieSet(MT='',BBG='BBG',Vorserie='')",
+                "type": "BMW.APS_NEXT_SRV_VH_SRV.MT_BBG_Vorserie"
+            },
+            "MT": "",
+            "BBG": "BBG",
+            "Vorserie": ""
+        },
+        {
+            "__metadata": {
+                "id": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/MT_BBG_VorserieSet(MT='',BBG='EBG',Vorserie='')",
+                "uri": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/MT_BBG_VorserieSet(MT='',BBG='EBG',Vorserie='')",
+                "type": "BMW.APS_NEXT_SRV_VH_SRV.MT_BBG_Vorserie"
+            },
+            "MT": "",
+            "BBG": "EBG",
+            "Vorserie": ""
+        },
+        {
+            "__metadata": {
+                "id": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/MT_BBG_VorserieSet(MT='',BBG='KSP',Vorserie='')",
+                "uri": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/MT_BBG_VorserieSet(MT='',BBG='KSP',Vorserie='')",
+                "type": "BMW.APS_NEXT_SRV_VH_SRV.MT_BBG_Vorserie"
+            },
+            "MT": "",
+            "BBG": "KSP",
+            "Vorserie": ""
+        },
+        {
+            "__metadata": {
+                "id": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/MT_BBG_VorserieSet(MT='',BBG='MT',Vorserie='')",
+                "uri": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/MT_BBG_VorserieSet(MT='',BBG='MT',Vorserie='')",
+                "type": "BMW.APS_NEXT_SRV_VH_SRV.MT_BBG_Vorserie"
+            },
+            "MT": "",
+            "BBG": "MT",
+            "Vorserie": ""
+        },
+        {
+            "__metadata": {
+                "id": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/MT_BBG_VorserieSet(MT='',BBG='PVL',Vorserie='')",
+                "uri": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/MT_BBG_VorserieSet(MT='',BBG='PVL',Vorserie='')",
+                "type": "BMW.APS_NEXT_SRV_VH_SRV.MT_BBG_Vorserie"
+            },
+            "MT": "",
+            "BBG": "PVL",
+            "Vorserie": ""
+        },
+        {
+            "__metadata": {
+                "id": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/MT_BBG_VorserieSet(MT='',BBG='SBWE',Vorserie='')",
+                "uri": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/MT_BBG_VorserieSet(MT='',BBG='SBWE',Vorserie='')",
+                "type": "BMW.APS_NEXT_SRV_VH_SRV.MT_BBG_Vorserie"
+            },
+            "MT": "",
+            "BBG": "SBWE",
+            "Vorserie": ""
+        },
+        {
+            "__metadata": {
+                "id": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/MT_BBG_VorserieSet(MT='',BBG='VS',Vorserie='')",
+                "uri": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/MT_BBG_VorserieSet(MT='',BBG='VS',Vorserie='')",
+                "type": "BMW.APS_NEXT_SRV_VH_SRV.MT_BBG_Vorserie"
+            },
+            "MT": "",
+            "BBG": "VS",
+            "Vorserie": ""
+        }
+    ],
+    "PartNrSet" : [
+            {"PartNr": "1234567",
+                    "Description": "ZB DOPPEL-SNR-TEST-JITKZ-2 \"!**<>^",
+                    "AI": "34",
+                    "Kogroup": "K4110",
+                    "Kievfag": "XE"
+            },
+            {"PartNr": "2345678",
+                    "Description": "Second sachnr",
+                    "AI": "24",
+                    "Kogroup": "K4110",
+                    "Kievfag": "XE"
+            },
+            {"PartNr": "5566778",
+                    "Description": "New wheel",
+                    "AI": "10",
+                    "Kogroup": "K9110",
+                    "Kievfag": "XE"
+            },
+            {"PartNr": "3344556",
+                    "Description": "Add your description^",
+                    "AI": "34",
+                    "Kogroup": "K3110",
+                    "Kievfag": "XE"
+            },
+            {"PartNr": "1111111",
+                    "Description": "Descr 2 **<>^",
+                    "AI": "99",
+                    "Kogroup": "K4111",
+                    "Kievfag": "XE"
+            }
+    ],
+    "User_detailsSet": [
+        {
+            "__metadata": {
+                "id": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/User_detailsSet('QXZ2SLG')",
+                "uri": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/User_detailsSet('QXZ2SLG')",
+                "type": "BMW.APS_NEXT_SRV_VH_SRV.User_details"
+            },
+            "Lastname": "Karaarslan",
+            "Firstname": "Kenan",
+            "Department": "FG-6-V-30",
+            "Email": "Kenan.Karaarslan@partner.bmw.de",
+            "QX": "QXZ2SLG",
+            "ConstructionSite": "",
+            "LocationPart": "",
+            "Building": "",
+            "RoomNumber": "",
+            "Sup_Cust_nr": "",
+            "PhoneNr": "+498999361259"
+        },
+        {
+            "__metadata": {
+                "id": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/User_detailsSet('QXZ18R0')",
+                "uri": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/User_detailsSet('QXZ18R0')",
+                "type": "BMW.APS_NEXT_SRV_VH_SRV.User_details"
+            },
+            "Lastname": "Vermaak",
+            "Firstname": "Clinton",
+            "Department": "FG-9-Z-24",
+            "Email": "Clinton.Vermaak@partner.bmw.co.za",
+            "QX": "QXZ18R0",
+            "ConstructionSite": "",
+            "LocationPart": "",
+            "Building": "",
+            "RoomNumber": "",
+            "Sup_Cust_nr": "",
+            "PhoneNr": "+4927711815077"
+        },
+        {
+            "__metadata": {
+                "id": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/User_detailsSet('QXZ0ZVW')",
+                "uri": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/User_detailsSet('QXZ0ZVW')",
+                "type": "BMW.APS_NEXT_SRV_VH_SRV.User_details"
+            },
+            "Lastname": "Baadkar",
+            "Firstname": "Darshan",
+            "Department": "FG-830",
+            "Email": "Darshan.Baadkar@partner.bmw.de",
+            "QX": "QXZ0ZVW",
+            "ConstructionSite": "",
+            "LocationPart": "",
+            "Building": "",
+            "RoomNumber": "",
+            "Sup_Cust_nr": "",
+            "PhoneNr": "+491100110011"
+        },
+        {
+            "__metadata": {
+                "id": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/User_detailsSet('QXW5061')",
+                "uri": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/User_detailsSet('QXW5061')",
+                "type": "BMW.APS_NEXT_SRV_VH_SRV.User_details"
+            },
+            "Lastname": "Raath",
+            "Firstname": "Kevin",
+            "Department": "",
+            "Email": "Kevin.Raath@bmwithub.co.za",
+            "QX": "QXW5061",
+            "ConstructionSite": "",
+            "LocationPart": "",
+            "Building": "",
+            "RoomNumber": "",
+            "Sup_Cust_nr": "",
+            "PhoneNr": ""
+        },
+        {
+            "__metadata": {
+                "id": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/User_detailsSet('QXP1449')",
+                "uri": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/User_detailsSet('QXP1449')",
+                "type": "BMW.APS_NEXT_SRV_VH_SRV.User_details"
+            },
+            "Lastname": "GRAAP",
+            "Firstname": "CHRISTINA",
+            "Department": "NL-N-F-I",
+            "Email": "Christina.Graap@partner.bmw.de",
+            "QX": "QXP1449",
+            "ConstructionSite": "",
+            "LocationPart": "",
+            "Building": "",
+            "RoomNumber": "",
+            "Sup_Cust_nr": "",
+            "PhoneNr": ""
+        },
+        {
+            "__metadata": {
+                "id": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/User_detailsSet('QXP1418')",
+                "uri": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/User_detailsSet('QXP1418')",
+                "type": "BMW.APS_NEXT_SRV_VH_SRV.User_details"
+            },
+            "Lastname": "OVERGAAUW",
+            "Firstname": "META",
+            "Department": "AL-NL-F-7",
+            "Email": "Meta.Overgaauw@partner.alphabet.com",
+            "QX": "QXP1418",
+            "ConstructionSite": "",
+            "LocationPart": "",
+            "Building": "",
+            "RoomNumber": "",
+            "Sup_Cust_nr": "",
+            "PhoneNr": ""
+        },
+        {
+            "__metadata": {
+                "id": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/User_detailsSet('QXP1126')",
+                "uri": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/User_detailsSet('QXP1126')",
+                "type": "BMW.APS_NEXT_SRV_VH_SRV.User_details"
+            },
+            "Lastname": "SCHAA",
+            "Firstname": "BORIS",
+            "Department": "FG-C-31",
+            "Email": "Boris.Schaa@partner.bmw.de",
+            "QX": "QXP1126",
+            "ConstructionSite": "",
+            "LocationPart": "",
+            "Building": "",
+            "RoomNumber": "",
+            "Sup_Cust_nr": "",
+            "PhoneNr": ""
+        },
+        {
+            "__metadata": {
+                "id": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/User_detailsSet('QXP1023')",
+                "uri": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/User_detailsSet('QXP1023')",
+                "type": "BMW.APS_NEXT_SRV_VH_SRV.User_details"
+            },
+            "Lastname": "MAAROUF",
+            "Firstname": "WISSAM",
+            "Department": "NL-W-2-A-S",
+            "Email": "Wissam.Maarouf@partner.bmw.de",
+            "QX": "QXP1023",
+            "ConstructionSite": "",
+            "LocationPart": "",
+            "Building": "",
+            "RoomNumber": "",
+            "Sup_Cust_nr": "",
+            "PhoneNr": ""
+        },
+        {
+            "__metadata": {
+                "id": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/User_detailsSet('QXP1002')",
+                "uri": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/User_detailsSet('QXP1002')",
+                "type": "BMW.APS_NEXT_SRV_VH_SRV.User_details"
+            },
+            "Lastname": "BRAATZ",
+            "Firstname": "HELGE",
+            "Department": "FG-C-60",
+            "Email": "Helge.Braatz@partner.bmw.de",
+            "QX": "QXP1002",
+            "ConstructionSite": "",
+            "LocationPart": "",
+            "Building": "",
+            "RoomNumber": "",
+            "Sup_Cust_nr": "",
+            "PhoneNr": ""
+        },
+        {
+            "__metadata": {
+                "id": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/User_detailsSet('QXP0946')",
+                "uri": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/User_detailsSet('QXP0946')",
+                "type": "BMW.APS_NEXT_SRV_VH_SRV.User_details"
+            },
+            "Lastname": "SCHAAL",
+            "Firstname": "FRANCO",
+            "Department": "UX-T-43",
+            "Email": "Franco.Schaal@partner.bmw.de",
+            "QX": "QXP0946",
+            "ConstructionSite": "",
+            "LocationPart": "",
+            "Building": "",
+            "RoomNumber": "",
+            "Sup_Cust_nr": "",
+            "PhoneNr": ""
+        },
+        {
+            "__metadata": {
+                "id": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/User_detailsSet('QXP0931')",
+                "uri": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/User_detailsSet('QXP0931')",
+                "type": "BMW.APS_NEXT_SRV_VH_SRV.User_details"
+            },
+            "Lastname": "BJAALAND",
+            "Firstname": "PHILIPPA",
+            "Department": "BD-524",
+            "Email": "Philippa.Bjaaland@partner.bmw.co.uk",
+            "QX": "QXP0931",
+            "ConstructionSite": "",
+            "LocationPart": "",
+            "Building": "",
+            "RoomNumber": "",
+            "Sup_Cust_nr": "",
+            "PhoneNr": ""
+        },
+        {
+            "__metadata": {
+                "id": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/User_detailsSet('QXO9955')",
+                "uri": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/User_detailsSet('QXO9955')",
+                "type": "BMW.APS_NEXT_SRV_VH_SRV.User_details"
+            },
+            "Lastname": "SAAD",
+            "Firstname": "MAHIR",
+            "Department": "TO-160",
+            "Email": "Mahir.Saad@partner.bmwgroup.com",
+            "QX": "QXO9955",
+            "ConstructionSite": "",
+            "LocationPart": "",
+            "Building": "",
+            "RoomNumber": "",
+            "Sup_Cust_nr": "",
+            "PhoneNr": ""
+        },
+        {
+            "__metadata": {
+                "id": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/User_detailsSet('QXO9500')",
+                "uri": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/User_detailsSet('QXO9500')",
+                "type": "BMW.APS_NEXT_SRV_VH_SRV.User_details"
+            },
+            "Lastname": "RAAB",
+            "Firstname": "ISABELL",
+            "Department": "TP-333",
+            "Email": "Isabell.RA.Raab@bmw.de",
+            "QX": "QXO9500",
+            "ConstructionSite": "",
+            "LocationPart": "",
+            "Building": "",
+            "RoomNumber": "",
+            "Sup_Cust_nr": "",
+            "PhoneNr": ""
+        },
+        {
+            "__metadata": {
+                "id": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/User_detailsSet('QXO8883')",
+                "uri": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/User_detailsSet('QXO8883')",
+                "type": "BMW.APS_NEXT_SRV_VH_SRV.User_details"
+            },
+            "Lastname": "MAASS",
+            "Firstname": "RENE",
+            "Department": "SF6-S-22",
+            "Email": "Rene.Maass@partner.bmw.de",
+            "QX": "QXO8883",
+            "ConstructionSite": "",
+            "LocationPart": "",
+            "Building": "",
+            "RoomNumber": "",
+            "Sup_Cust_nr": "",
+            "PhoneNr": ""
+        },
+        {
+            "__metadata": {
+                "id": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/User_detailsSet('QXO8727')",
+                "uri": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/User_detailsSet('QXO8727')",
+                "type": "BMW.APS_NEXT_SRV_VH_SRV.User_details"
+            },
+            "Lastname": "SCHAAL",
+            "Firstname": "TORSTEN",
+            "Department": "UX-T-43",
+            "Email": "Torsten.Schaal@partner.bmw.de",
+            "QX": "QXO8727",
+            "ConstructionSite": "",
+            "LocationPart": "",
+            "Building": "",
+            "RoomNumber": "",
+            "Sup_Cust_nr": "",
+            "PhoneNr": ""
+        },
+        {
+            "__metadata": {
+                "id": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/User_detailsSet('QXO8677')",
+                "uri": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/User_detailsSet('QXO8677')",
+                "type": "BMW.APS_NEXT_SRV_VH_SRV.User_details"
+            },
+            "Lastname": "HJEMGAARD",
+            "Firstname": "MINNA",
+            "Department": "B1-NE-A-6",
+            "Email": "Minna.Hjemgaard@partner.bmw.se",
+            "QX": "QXO8677",
+            "ConstructionSite": "",
+            "LocationPart": "",
+            "Building": "",
+            "RoomNumber": "",
+            "Sup_Cust_nr": "",
+            "PhoneNr": ""
+        },
+        {
+            "__metadata": {
+                "id": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/User_detailsSet('QXO8288')",
+                "uri": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/User_detailsSet('QXO8288')",
+                "type": "BMW.APS_NEXT_SRV_VH_SRV.User_details"
+            },
+            "Lastname": "GAAL",
+            "Firstname": "JURAJ",
+            "Department": "UA-41",
+            "Email": "Juraj.Gaal@partner.bmwgroup.com",
+            "QX": "QXO8288",
+            "ConstructionSite": "",
+            "LocationPart": "",
+            "Building": "",
+            "RoomNumber": "",
+            "Sup_Cust_nr": "",
+            "PhoneNr": ""
+        },
+        {
+            "__metadata": {
+                "id": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/User_detailsSet('QXO8015')",
+                "uri": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/User_detailsSet('QXO8015')",
+                "type": "BMW.APS_NEXT_SRV_VH_SRV.User_details"
+            },
+            "Lastname": "ZWAANS",
+            "Firstname": "ANDRE",
+            "Department": "EK-P",
+            "Email": "Andre.Zwaans@partner.bmw.de",
+            "QX": "QXO8015",
+            "ConstructionSite": "",
+            "LocationPart": "",
+            "Building": "",
+            "RoomNumber": "",
+            "Sup_Cust_nr": "",
+            "PhoneNr": ""
+        },
+        {
+            "__metadata": {
+                "id": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/User_detailsSet('QXO7393')",
+                "uri": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/User_detailsSet('QXO7393')",
+                "type": "BMW.APS_NEXT_SRV_VH_SRV.User_details"
+            },
+            "Lastname": "BOSTELAAR",
+            "Firstname": "GENNA",
+            "Department": "AL-NL-S-5",
+            "Email": "Genna.Bostelaar@partner.alphabet.com",
+            "QX": "QXO7393",
+            "ConstructionSite": "",
+            "LocationPart": "",
+            "Building": "",
+            "RoomNumber": "",
+            "Sup_Cust_nr": "",
+            "PhoneNr": ""
+        },
+        {
+            "__metadata": {
+                "id": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/User_detailsSet('QXO7392')",
+                "uri": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/User_detailsSet('QXO7392')",
+                "type": "BMW.APS_NEXT_SRV_VH_SRV.User_details"
+            },
+            "Lastname": "PAANS",
+            "Firstname": "PERRY",
+            "Department": "AL-NL-S-5",
+            "Email": "Perry.Paans@partner.alphabet.com",
+            "QX": "QXO7392",
+            "ConstructionSite": "",
+            "LocationPart": "",
+            "Building": "",
+            "RoomNumber": "",
+            "Sup_Cust_nr": "",
+            "PhoneNr": ""
+        }
+    ],
+    "External_receiverSet": [
+            {
+                "__metadata": {
+                    "id": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/External_receiverSet('0015697010')",
+                    "uri": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/External_receiverSet('0015697010')",
+                    "type": "BMW.APS_NEXT_SRV_VH_SRV.External_receiver"
+                },
+                "Sup_Cust_nr": "0015697010",
+                "Department": "SAAB-HIRSCHBOLD",
+                "Street": "HUFELANDSTR. 23 /",
+                "Country_ZIP_Place": "DE / 80939 / MUENCHEN",
+                "Country": "",
+                "ZIP": "",
+                "Place": "",
+                "Contact_Person": "",
+                "Phone": ""
+            },
+            {
+                "__metadata": {
+                    "id": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/External_receiverSet('0012037311')",
+                    "uri": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/External_receiverSet('0012037311')",
+                    "type": "BMW.APS_NEXT_SRV_VH_SRV.External_receiver"
+                },
+                "Sup_Cust_nr": "0012037311",
+                "Department": "HELLA KGAA HUECK & CO",
+                "Street": "SCHLEISSHEIMER STR. 377A /",
+                "Country_ZIP_Place": "DE / 80935 / MUENCHEN",
+                "Country": "",
+                "ZIP": "",
+                "Place": "",
+                "Contact_Person": "",
+                "Phone": ""
+            },
+            {
+                "__metadata": {
+                    "id": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/External_receiverSet('0012927210')",
+                    "uri": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/External_receiverSet('0012927210')",
+                    "type": "BMW.APS_NEXT_SRV_VH_SRV.External_receiver"
+                },
+                "Sup_Cust_nr": "0012927210",
+                "Department": "FERROSTAAL SUED GMBH",
+                "Street": "LANDSBERGER STR.439 /",
+                "Country_ZIP_Place": "DE / 81241 / MUENCHEN",
+                "Country": "",
+                "ZIP": "",
+                "Place": "",
+                "Contact_Person": "",
+                "Phone": ""
+            },
+            {
+                "__metadata": {
+                    "id": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/External_receiverSet('0010962710')",
+                    "uri": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/External_receiverSet('0010962710')",
+                    "type": "BMW.APS_NEXT_SRV_VH_SRV.External_receiver"
+                },
+                "Sup_Cust_nr": "0010962710",
+                "Department": "BAYERISCHES STAATSMINISTERIUM FUER",
+                "Street": "HAIDENAUPLATZ 1 /",
+                "Country_ZIP_Place": "DE / 81667 / MUENCHEN",
+                "Country": "",
+                "ZIP": "",
+                "Place": "",
+                "Contact_Person": "",
+                "Phone": ""
+            },
+            {
+                "__metadata": {
+                    "id": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/External_receiverSet('0011813010')",
+                    "uri": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/External_receiverSet('0011813010')",
+                    "type": "BMW.APS_NEXT_SRV_VH_SRV.External_receiver"
+                },
+                "Sup_Cust_nr": "0011813010",
+                "Department": "HENKEL AG & CO. KGAA",
+                "Street": "HENKELSTR. 67 /",
+                "Country_ZIP_Place": "DE / 40589 / DUESSELDORF",
+                "Country": "",
+                "ZIP": "",
+                "Place": "",
+                "Contact_Person": "",
+                "Phone": ""
+            },
+            {
+                "__metadata": {
+                    "id": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/External_receiverSet('0011813016')",
+                    "uri": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/External_receiverSet('0011813016')",
+                    "type": "BMW.APS_NEXT_SRV_VH_SRV.External_receiver"
+                },
+                "Sup_Cust_nr": "0011813016",
+                "Department": "HENKEL KGAA",
+                "Street": "HILGESTR.14 /",
+                "Country_ZIP_Place": "DE / 55294 / BODENHEIM",
+                "Country": "",
+                "ZIP": "",
+                "Place": "",
+                "Contact_Person": "",
+                "Phone": ""
+            },
+            {
+                "__metadata": {
+                    "id": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/External_receiverSet('0011813017')",
+                    "uri": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/External_receiverSet('0011813017')",
+                    "type": "BMW.APS_NEXT_SRV_VH_SRV.External_receiver"
+                },
+                "Sup_Cust_nr": "0011813017",
+                "Department": "HENKEL KGAA",
+                "Street": "AM OCKENHEIMER GRABEN 23 /",
+                "Country_ZIP_Place": "DE / 55411 / BINGEN",
+                "Country": "",
+                "ZIP": "",
+                "Place": "",
+                "Contact_Person": "",
+                "Phone": ""
+            },
+            {
+                "__metadata": {
+                    "id": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/External_receiverSet('0011813018')",
+                    "uri": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/External_receiverSet('0011813018')",
+                    "type": "BMW.APS_NEXT_SRV_VH_SRV.External_receiver"
+                },
+                "Sup_Cust_nr": "0011813018",
+                "Department": "HENKEL KGAA",
+                "Street": "KUPFERHAMMER /",
+                "Country_ZIP_Place": "DE / 33649 / BIELEFELD",
+                "Country": "",
+                "ZIP": "",
+                "Place": "",
+                "Contact_Person": "",
+                "Phone": ""
+            },
+            {
+                "__metadata": {
+                    "id": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/External_receiverSet('0012037310')",
+                    "uri": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/External_receiverSet('0012037310')",
+                    "type": "BMW.APS_NEXT_SRV_VH_SRV.External_receiver"
+                },
+                "Sup_Cust_nr": "0012037310",
+                "Department": "HELLA KGAA HUECK & CO.",
+                "Street": "RIXBECKER STR. 75 /",
+                "Country_ZIP_Place": "DE / 59552 / LIPPSTADT",
+                "Country": "",
+                "ZIP": "",
+                "Place": "",
+                "Contact_Person": "",
+                "Phone": ""
+            },
+            {
+                "__metadata": {
+                    "id": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/External_receiverSet('0012037313')",
+                    "uri": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/External_receiverSet('0012037313')",
+                    "type": "BMW.APS_NEXT_SRV_VH_SRV.External_receiver"
+                },
+                "Sup_Cust_nr": "0012037313",
+                "Department": "HELLA KGAA",
+                "Street": "BERGHAEUSER STR. 30 /",
+                "Country_ZIP_Place": "DE / 45663 / RECKLINGHAUSEN",
+                "Country": "",
+                "ZIP": "",
+                "Place": "",
+                "Contact_Person": "",
+                "Phone": ""
+            },
+            {
+                "__metadata": {
+                    "id": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/External_receiverSet('0012037315')",
+                    "uri": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/External_receiverSet('0012037315')",
+                    "type": "BMW.APS_NEXT_SRV_VH_SRV.External_receiver"
+                },
+                "Sup_Cust_nr": "0012037315",
+                "Department": "HELLA KGAA HUECK & CO.",
+                "Street": "ROEMERSTR. 66 /",
+                "Country_ZIP_Place": "DE / 59075 / HAMM",
+                "Country": "",
+                "ZIP": "",
+                "Place": "",
+                "Contact_Person": "",
+                "Phone": ""
+            },
+            {
+                "__metadata": {
+                    "id": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/External_receiverSet('0012037316')",
+                    "uri": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/External_receiverSet('0012037316')",
+                    "type": "BMW.APS_NEXT_SRV_VH_SRV.External_receiver"
+                },
+                "Sup_Cust_nr": "0012037316",
+                "Department": "HELLA KGAA HUECK & CO.",
+                "Street": "RIXBECKER STR. 75 /",
+                "Country_ZIP_Place": "DE / 59957 / LIPPSTADT",
+                "Country": "",
+                "ZIP": "",
+                "Place": "",
+                "Contact_Person": "",
+                "Phone": ""
+            },
+            {
+                "__metadata": {
+                    "id": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/External_receiverSet('0012037317')",
+                    "uri": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/External_receiverSet('0012037317')",
+                    "type": "BMW.APS_NEXT_SRV_VH_SRV.External_receiver"
+                },
+                "Sup_Cust_nr": "0012037317",
+                "Department": "HELLA KGAA HUECK & CO.",
+                "Street": "RIXBECKER STR.75 /",
+                "Country_ZIP_Place": "DE / 59552 / LIPPSTADT",
+                "Country": "",
+                "ZIP": "",
+                "Place": "",
+                "Contact_Person": "",
+                "Phone": ""
+            },
+            {
+                "__metadata": {
+                    "id": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/External_receiverSet('0012037320')",
+                    "uri": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/External_receiverSet('0012037320')",
+                    "type": "BMW.APS_NEXT_SRV_VH_SRV.External_receiver"
+                },
+                "Sup_Cust_nr": "0012037320",
+                "Department": "HELLA KGAA",
+                "Street": "BECKUMERSTR. 130 /",
+                "Country_ZIP_Place": "DE / 59555 / LIPPSTADT",
+                "Country": "",
+                "ZIP": "",
+                "Place": "",
+                "Contact_Person": "",
+                "Phone": ""
+            },
+            {
+                "__metadata": {
+                    "id": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/External_receiverSet('0012037323')",
+                    "uri": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/External_receiverSet('0012037323')",
+                    "type": "BMW.APS_NEXT_SRV_VH_SRV.External_receiver"
+                },
+                "Sup_Cust_nr": "0012037323",
+                "Department": "HELLA KGAA HUECK & CO.",
+                "Street": "RIXBECKER STR. 75 /",
+                "Country_ZIP_Place": "DE / 59552 / LIPPSTADT",
+                "Country": "",
+                "ZIP": "",
+                "Place": "",
+                "Contact_Person": "",
+                "Phone": ""
+            },
+            {
+                "__metadata": {
+                    "id": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/External_receiverSet('0010877916')",
+                    "uri": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/External_receiverSet('0010877916')",
+                    "type": "BMW.APS_NEXT_SRV_VH_SRV.External_receiver"
+                },
+                "Sup_Cust_nr": "0010877916",
+                "Department": "SAAR NADELLAGER OHG",
+                "Street": "HASENAECKERSTR. 30 /",
+                "Country_ZIP_Place": "DE / 66424 / HOMBURG / SAAR",
+                "Country": "",
+                "ZIP": "",
+                "Place": "",
+                "Contact_Person": "",
+                "Phone": ""
+            },
+            {
+                "__metadata": {
+                    "id": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/External_receiverSet('0080388011')",
+                    "uri": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/External_receiverSet('0080388011')",
+                    "type": "BMW.APS_NEXT_SRV_VH_SRV.External_receiver"
+                },
+                "Sup_Cust_nr": "0080388011",
+                "Department": "RAAB KARCHER",
+                "Street": "BODENSEESTR. 151 /",
+                "Country_ZIP_Place": "DE / 81243 / MUENCHEN",
+                "Country": "",
+                "ZIP": "",
+                "Place": "",
+                "Contact_Person": "",
+                "Phone": ""
+            },
+            {
+                "__metadata": {
+                    "id": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/External_receiverSet('0070845510')",
+                    "uri": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/External_receiverSet('0070845510')",
+                    "type": "BMW.APS_NEXT_SRV_VH_SRV.External_receiver"
+                },
+                "Sup_Cust_nr": "0070845510",
+                "Department": "NAAB-WERKSTAETTEN GMBH",
+                "Street": "ST.-VITALIS STR. 22 /",
+                "Country_ZIP_Place": "DE / 92421 / SCHWANDORF",
+                "Country": "",
+                "ZIP": "",
+                "Place": "",
+                "Contact_Person": "",
+                "Phone": ""
+            },
+            {
+                "__metadata": {
+                    "id": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/External_receiverSet('0010815910')",
+                    "uri": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/External_receiverSet('0010815910')",
+                    "type": "BMW.APS_NEXT_SRV_VH_SRV.External_receiver"
+                },
+                "Sup_Cust_nr": "0010815910",
+                "Department": "AALFLEX-DUREX GMBH",
+                "Street": "LUENESCHLOSS STR. 42 /",
+                "Country_ZIP_Place": "DE / 42657 / SOLINGEN",
+                "Country": "",
+                "ZIP": "",
+                "Place": "",
+                "Contact_Person": "",
+                "Phone": ""
+            },
+            {
+                "__metadata": {
+                    "id": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/External_receiverSet('0014252510')",
+                    "uri": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/External_receiverSet('0014252510')",
+                    "type": "BMW.APS_NEXT_SRV_VH_SRV.External_receiver"
+                },
+                "Sup_Cust_nr": "0014252510",
+                "Department": "AAT HINTERDOBLER GMBH",
+                "Street": "REUTERN 36 /",
+                "Country_ZIP_Place": "DE / 94086 / GRIESBACH",
+                "Country": "",
+                "ZIP": "",
+                "Place": "",
+                "Contact_Person": "",
+                "Phone": ""
+            },
+            {
+                "__metadata": {
+                    "id": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/External_receiverSet('0016043010')",
+                    "uri": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/External_receiverSet('0016043010')",
+                    "type": "BMW.APS_NEXT_SRV_VH_SRV.External_receiver"
+                },
+                "Sup_Cust_nr": "0016043010",
+                "Department": "AACHENER QUARZ-GLAS",
+                "Street": "IM SUESTERFELD 4 /",
+                "Country_ZIP_Place": "DE / 52072 / AACHEN",
+                "Country": "",
+                "ZIP": "",
+                "Place": "",
+                "Contact_Person": "",
+                "Phone": ""
+            },
+            {
+                "__metadata": {
+                    "id": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/External_receiverSet('0020787810')",
+                    "uri": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/External_receiverSet('0020787810')",
+                    "type": "BMW.APS_NEXT_SRV_VH_SRV.External_receiver"
+                },
+                "Sup_Cust_nr": "0020787810",
+                "Department": "RWTH AACHEN",
+                "Street": "WUELLNERSTR.5 /",
+                "Country_ZIP_Place": "DE / 52062 / AACHEN",
+                "Country": "",
+                "ZIP": "",
+                "Place": "",
+                "Contact_Person": "",
+                "Phone": ""
+            },
+            {
+                "__metadata": {
+                    "id": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/External_receiverSet('0020787811')",
+                    "uri": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/External_receiverSet('0020787811')",
+                    "type": "BMW.APS_NEXT_SRV_VH_SRV.External_receiver"
+                },
+                "Sup_Cust_nr": "0020787811",
+                "Department": "RWTH AACHEN",
+                "Street": "TEMPLERGRABEN 55 /",
+                "Country_ZIP_Place": "DE / 52062 / AACHEN",
+                "Country": "",
+                "ZIP": "",
+                "Place": "",
+                "Contact_Person": "",
+                "Phone": ""
+            },
+            {
+                "__metadata": {
+                    "id": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/External_receiverSet('0020787812')",
+                    "uri": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/External_receiverSet('0020787812')",
+                    "type": "BMW.APS_NEXT_SRV_VH_SRV.External_receiver"
+                },
+                "Sup_Cust_nr": "0020787812",
+                "Department": "RWTH AACHEN",
+                "Street": "STEINBACHSTR. 53 /",
+                "Country_ZIP_Place": "DE / 52074 / AACHEN",
+                "Country": "",
+                "ZIP": "",
+                "Place": "",
+                "Contact_Person": "",
+                "Phone": ""
+            },
+            {
+                "__metadata": {
+                    "id": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/External_receiverSet('0020787813')",
+                    "uri": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/External_receiverSet('0020787813')",
+                    "type": "BMW.APS_NEXT_SRV_VH_SRV.External_receiver"
+                },
+                "Sup_Cust_nr": "0020787813",
+                "Department": "RWTH AACHEN",
+                "Street": "PONTSTR.49-55 /",
+                "Country_ZIP_Place": "DE / 52062 / AACHEN",
+                "Country": "",
+                "ZIP": "",
+                "Place": "",
+                "Contact_Person": "",
+                "Phone": ""
+            },
+            {
+                "__metadata": {
+                    "id": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/External_receiverSet('0020787814')",
+                    "uri": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/External_receiverSet('0020787814')",
+                    "type": "BMW.APS_NEXT_SRV_VH_SRV.External_receiver"
+                },
+                "Sup_Cust_nr": "0020787814",
+                "Department": "RWTH AACHEN",
+                "Street": "PONTSTR.49 /",
+                "Country_ZIP_Place": "DE / 52062 / AACHEN",
+                "Country": "",
+                "ZIP": "",
+                "Place": "",
+                "Contact_Person": "",
+                "Phone": ""
+            },
+            {
+                "__metadata": {
+                    "id": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/External_receiverSet('0020787815')",
+                    "uri": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/External_receiverSet('0020787815')",
+                    "type": "BMW.APS_NEXT_SRV_VH_SRV.External_receiver"
+                },
+                "Sup_Cust_nr": "0020787815",
+                "Department": "RWTH AACHEN",
+                "Street": "STEINBACHSTR. 10 /",
+                "Country_ZIP_Place": "DE / 52074 / AACHEN",
+                "Country": "",
+                "ZIP": "",
+                "Place": "",
+                "Contact_Person": "",
+                "Phone": ""
+            },
+            {
+                "__metadata": {
+                    "id": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/External_receiverSet('0020787816')",
+                    "uri": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/External_receiverSet('0020787816')",
+                    "type": "BMW.APS_NEXT_SRV_VH_SRV.External_receiver"
+                },
+                "Sup_Cust_nr": "0020787816",
+                "Department": "RWTH AACHEN",
+                "Street": "AM PANNHAUS 1 /",
+                "Country_ZIP_Place": "DE / 52072 / AACHEN",
+                "Country": "",
+                "ZIP": "",
+                "Place": "",
+                "Contact_Person": "",
+                "Phone": ""
+            },
+            {
+                "__metadata": {
+                    "id": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/External_receiverSet('0020787817')",
+                    "uri": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/External_receiverSet('0020787817')",
+                    "type": "BMW.APS_NEXT_SRV_VH_SRV.External_receiver"
+                },
+                "Sup_Cust_nr": "0020787817",
+                "Department": "RWTH AACHEN",
+                "Street": "WORRINGER WEG 1 /",
+                "Country_ZIP_Place": "DE / 52074 / AACHEN",
+                "Country": "",
+                "ZIP": "",
+                "Place": "",
+                "Contact_Person": "",
+                "Phone": ""
+            },
+            {
+                "__metadata": {
+                    "id": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/External_receiverSet('0020787818')",
+                    "uri": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/External_receiverSet('0020787818')",
+                    "type": "BMW.APS_NEXT_SRV_VH_SRV.External_receiver"
+                },
+                "Sup_Cust_nr": "0020787818",
+                "Department": "RWTH AACHEN",
+                "Street": "TEMPLERGRABEN 55 /",
+                "Country_ZIP_Place": "DE / 52062 / AACHEN",
+                "Country": "",
+                "ZIP": "",
+                "Place": "",
+                "Contact_Person": "",
+                "Phone": ""
+            },
+            {
+                "__metadata": {
+                    "id": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/External_receiverSet('0020787819')",
+                    "uri": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/External_receiverSet('0020787819')",
+                    "type": "BMW.APS_NEXT_SRV_VH_SRV.External_receiver"
+                },
+                "Sup_Cust_nr": "0020787819",
+                "Department": "RWTH AACHEN",
+                "Street": "STEINBACHSTR.53 /",
+                "Country_ZIP_Place": "DE / 52074 / AACHEN",
+                "Country": "",
+                "ZIP": "",
+                "Place": "",
+                "Contact_Person": "",
+                "Phone": ""
+            },
+            {
+                "__metadata": {
+                    "id": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/External_receiverSet('0020787820')",
+                    "uri": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/External_receiverSet('0020787820')",
+                    "type": "BMW.APS_NEXT_SRV_VH_SRV.External_receiver"
+                },
+                "Sup_Cust_nr": "0020787820",
+                "Department": "RWTH AACHEN",
+                "Street": "WUELLNERSTR.7 /",
+                "Country_ZIP_Place": "DE / 52062 / AACHEN",
+                "Country": "",
+                "ZIP": "",
+                "Place": "",
+                "Contact_Person": "",
+                "Phone": ""
+            },
+            {
+                "__metadata": {
+                    "id": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/External_receiverSet('0020787821')",
+                    "uri": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/External_receiverSet('0020787821')",
+                    "type": "BMW.APS_NEXT_SRV_VH_SRV.External_receiver"
+                },
+                "Sup_Cust_nr": "0020787821",
+                "Department": "RWTH AACHEN",
+                "Street": "AHORNSTR.55 /",
+                "Country_ZIP_Place": "DE / 52074 / AACHEN",
+                "Country": "",
+                "ZIP": "",
+                "Place": "",
+                "Contact_Person": "",
+                "Phone": ""
+            },
+            {
+                "__metadata": {
+                    "id": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/External_receiverSet('0020787822')",
+                    "uri": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/External_receiverSet('0020787822')",
+                    "type": "BMW.APS_NEXT_SRV_VH_SRV.External_receiver"
+                },
+                "Sup_Cust_nr": "0020787822",
+                "Department": "FACHHOCHSCHULE AACHEN",
+                "Street": "GOETHESTR. 1 /",
+                "Country_ZIP_Place": "DE / 52064 / AACHEN",
+                "Country": "",
+                "ZIP": "",
+                "Place": "",
+                "Contact_Person": "",
+                "Phone": ""
+            }
+        ],
+    "LocationDetailsSet": [
+        {
+            "__metadata": {
+                "id": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/LocationDetailsSet(ConstructionSite='01',LocationPart='01')",
+                "uri": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/LocationDetailsSet(ConstructionSite='01',LocationPart='01')",
+                "type": "BMW.APS_NEXT_SRV_VH_SRV.LocationDetails"
+            },
+            "ConstructionSite": "01",
+            "LocationPart": "01",
+            "LocationDescription": "BMW AG WERK 1.1",
+            "LocationFlag": "X",
+            "Sup_Cust_nr": "0077348783"
+        },
+        {
+            "__metadata": {
+                "id": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/LocationDetailsSet(ConstructionSite='01',LocationPart='02')",
+                "uri": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/LocationDetailsSet(ConstructionSite='01',LocationPart='02')",
+                "type": "BMW.APS_NEXT_SRV_VH_SRV.LocationDetails"
+            },
+            "ConstructionSite": "01",
+            "LocationPart": "02",
+            "LocationDescription": "BMW AG WERK 1.2",
+            "LocationFlag": "",
+            "Sup_Cust_nr": "0062514128"
+        },
+        {
+            "__metadata": {
+                "id": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/LocationDetailsSet(ConstructionSite='01',LocationPart='03')",
+                "uri": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/LocationDetailsSet(ConstructionSite='01',LocationPart='03')",
+                "type": "BMW.APS_NEXT_SRV_VH_SRV.LocationDetails"
+            },
+            "ConstructionSite": "01",
+            "LocationPart": "03",
+            "LocationDescription": "BMW AG WERK 1.3 BUND",
+            "LocationFlag": "",
+            "Sup_Cust_nr": "0062514129"
+        },
+        {
+            "__metadata": {
+                "id": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/LocationDetailsSet(ConstructionSite='01',LocationPart='04')",
+                "uri": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/LocationDetailsSet(ConstructionSite='01',LocationPart='04')",
+                "type": "BMW.APS_NEXT_SRV_VH_SRV.LocationDetails"
+            },
+            "ConstructionSite": "01",
+            "LocationPart": "04",
+            "LocationDescription": "BMW AG WERK 1.4",
+            "LocationFlag": "X",
+            "Sup_Cust_nr": "0062514130"
+        },
+        {
+            "__metadata": {
+                "id": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/LocationDetailsSet(ConstructionSite='01',LocationPart='05')",
+                "uri": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/LocationDetailsSet(ConstructionSite='01',LocationPart='05')",
+                "type": "BMW.APS_NEXT_SRV_VH_SRV.LocationDetails"
+            },
+            "ConstructionSite": "01",
+            "LocationPart": "05",
+            "LocationDescription": "BMW AG WERK 1.5 (FIZ",
+            "LocationFlag": "X",
+            "Sup_Cust_nr": "0062514131"
+        },
+        {
+            "__metadata": {
+                "id": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/LocationDetailsSet(ConstructionSite='01',LocationPart='06')",
+                "uri": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/LocationDetailsSet(ConstructionSite='01',LocationPart='06')",
+                "type": "BMW.APS_NEXT_SRV_VH_SRV.LocationDetails"
+            },
+            "ConstructionSite": "01",
+            "LocationPart": "06",
+            "LocationDescription": "BMW AG WERK 1.6 (MOT",
+            "LocationFlag": "X",
+            "Sup_Cust_nr": "0077348755"
+        },
+        {
+            "__metadata": {
+                "id": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/LocationDetailsSet(ConstructionSite='01',LocationPart='07')",
+                "uri": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/LocationDetailsSet(ConstructionSite='01',LocationPart='07')",
+                "type": "BMW.APS_NEXT_SRV_VH_SRV.LocationDetails"
+            },
+            "ConstructionSite": "01",
+            "LocationPart": "07",
+            "LocationDescription": "BMW AG WERK 1.5 (FIZ",
+            "LocationFlag": "",
+            "Sup_Cust_nr": "0062514131"
+        },
+        {
+            "__metadata": {
+                "id": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/LocationDetailsSet(ConstructionSite='01',LocationPart='08')",
+                "uri": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/LocationDetailsSet(ConstructionSite='01',LocationPart='08')",
+                "type": "BMW.APS_NEXT_SRV_VH_SRV.LocationDetails"
+            },
+            "ConstructionSite": "01",
+            "LocationPart": "08",
+            "LocationDescription": "BMW M GMBH / BMW AG",
+            "LocationFlag": "",
+            "Sup_Cust_nr": ""
+        },
+        {
+            "__metadata": {
+                "id": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/LocationDetailsSet(ConstructionSite='01',LocationPart='09')",
+                "uri": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/LocationDetailsSet(ConstructionSite='01',LocationPart='09')",
+                "type": "BMW.APS_NEXT_SRV_VH_SRV.LocationDetails"
+            },
+            "ConstructionSite": "01",
+            "LocationPart": "09",
+            "LocationDescription": "BMW AG WERK 0.1",
+            "LocationFlag": "",
+            "Sup_Cust_nr": "0077348766"
+        },
+        {
+            "__metadata": {
+                "id": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/LocationDetailsSet(ConstructionSite='01',LocationPart='10')",
+                "uri": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/LocationDetailsSet(ConstructionSite='01',LocationPart='10')",
+                "type": "BMW.APS_NEXT_SRV_VH_SRV.LocationDetails"
+            },
+            "ConstructionSite": "01",
+            "LocationPart": "10",
+            "LocationDescription": "BMW NL M, FIL NORD,",
+            "LocationFlag": "X",
+            "Sup_Cust_nr": "0077348716"
+        },
+        {
+            "__metadata": {
+                "id": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/LocationDetailsSet(ConstructionSite='01',LocationPart='11')",
+                "uri": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/LocationDetailsSet(ConstructionSite='01',LocationPart='11')",
+                "type": "BMW.APS_NEXT_SRV_VH_SRV.LocationDetails"
+            },
+            "ConstructionSite": "01",
+            "LocationPart": "11",
+            "LocationDescription": "SCHERM STP TYRE & PR",
+            "LocationFlag": "",
+            "Sup_Cust_nr": "0062514117"
+        },
+        {
+            "__metadata": {
+                "id": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/LocationDetailsSet(ConstructionSite='01',LocationPart='12')",
+                "uri": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/LocationDetailsSet(ConstructionSite='01',LocationPart='12')",
+                "type": "BMW.APS_NEXT_SRV_VH_SRV.LocationDetails"
+            },
+            "ConstructionSite": "01",
+            "LocationPart": "12",
+            "LocationDescription": "BMW AG, LILIENTHAL A",
+            "LocationFlag": "",
+            "Sup_Cust_nr": "0062514128"
+        },
+        {
+            "__metadata": {
+                "id": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/LocationDetailsSet(ConstructionSite='01',LocationPart='13')",
+                "uri": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/LocationDetailsSet(ConstructionSite='01',LocationPart='13')",
+                "type": "BMW.APS_NEXT_SRV_VH_SRV.LocationDetails"
+            },
+            "ConstructionSite": "01",
+            "LocationPart": "13",
+            "LocationDescription": "BMW AG WERK 0.1",
+            "LocationFlag": "",
+            "Sup_Cust_nr": "0077348721"
+        },
+        {
+            "__metadata": {
+                "id": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/LocationDetailsSet(ConstructionSite='01',LocationPart='14')",
+                "uri": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/LocationDetailsSet(ConstructionSite='01',LocationPart='14')",
+                "type": "BMW.APS_NEXT_SRV_VH_SRV.LocationDetails"
+            },
+            "ConstructionSite": "01",
+            "LocationPart": "14",
+            "LocationDescription": "BMW AG WERK 0.1 VZF",
+            "LocationFlag": "",
+            "Sup_Cust_nr": "0077348760"
+        },
+        {
+            "__metadata": {
+                "id": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/LocationDetailsSet(ConstructionSite='01',LocationPart='15')",
+                "uri": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/LocationDetailsSet(ConstructionSite='01',LocationPart='15')",
+                "type": "BMW.APS_NEXT_SRV_VH_SRV.LocationDetails"
+            },
+            "ConstructionSite": "01",
+            "LocationPart": "15",
+            "LocationDescription": "BMW AG WERK 0.1",
+            "LocationFlag": "",
+            "Sup_Cust_nr": ""
+        },
+        {
+            "__metadata": {
+                "id": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/LocationDetailsSet(ConstructionSite='01',LocationPart='16')",
+                "uri": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/LocationDetailsSet(ConstructionSite='01',LocationPart='16')",
+                "type": "BMW.APS_NEXT_SRV_VH_SRV.LocationDetails"
+            },
+            "ConstructionSite": "01",
+            "LocationPart": "16",
+            "LocationDescription": "BMW NIEDERLASSUNG MU",
+            "LocationFlag": "",
+            "Sup_Cust_nr": "0061191928"
+        },
+        {
+            "__metadata": {
+                "id": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/LocationDetailsSet(ConstructionSite='01',LocationPart='17')",
+                "uri": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/LocationDetailsSet(ConstructionSite='01',LocationPart='17')",
+                "type": "BMW.APS_NEXT_SRV_VH_SRV.LocationDetails"
+            },
+            "ConstructionSite": "01",
+            "LocationPart": "17",
+            "LocationDescription": "BMW AG WERK 0.1 VICT",
+            "LocationFlag": "",
+            "Sup_Cust_nr": ""
+        },
+        {
+            "__metadata": {
+                "id": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/LocationDetailsSet(ConstructionSite='01',LocationPart='18')",
+                "uri": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/LocationDetailsSet(ConstructionSite='01',LocationPart='18')",
+                "type": "BMW.APS_NEXT_SRV_VH_SRV.LocationDetails"
+            },
+            "ConstructionSite": "01",
+            "LocationPart": "18",
+            "LocationDescription": "BMW AG WERK 0.1 HMR",
+            "LocationFlag": "",
+            "Sup_Cust_nr": ""
+        },
+        {
+            "__metadata": {
+                "id": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/LocationDetailsSet(ConstructionSite='01',LocationPart='19')",
+                "uri": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/LocationDetailsSet(ConstructionSite='01',LocationPart='19')",
+                "type": "BMW.APS_NEXT_SRV_VH_SRV.LocationDetails"
+            },
+            "ConstructionSite": "01",
+            "LocationPart": "19",
+            "LocationDescription": "BMW / NL M       RAE",
+            "LocationFlag": "",
+            "Sup_Cust_nr": "0077348789"
+        },
+        {
+            "__metadata": {
+                "id": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/LocationDetailsSet(ConstructionSite='01',LocationPart='20')",
+                "uri": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/LocationDetailsSet(ConstructionSite='01',LocationPart='20')",
+                "type": "BMW.APS_NEXT_SRV_VH_SRV.LocationDetails"
+            },
+            "ConstructionSite": "01",
+            "LocationPart": "20",
+            "LocationDescription": "BMW M GMBH",
+            "LocationFlag": "X",
+            "Sup_Cust_nr": ""
+        },
+        {
+            "__metadata": {
+                "id": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/LocationDetailsSet(ConstructionSite='01',LocationPart='21')",
+                "uri": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/LocationDetailsSet(ConstructionSite='01',LocationPart='21')",
+                "type": "BMW.APS_NEXT_SRV_VH_SRV.LocationDetails"
+            },
+            "ConstructionSite": "01",
+            "LocationPart": "21",
+            "LocationDescription": "BMW AG WERK 1.1 LAGE",
+            "LocationFlag": "",
+            "Sup_Cust_nr": ""
+        },
+        {
+            "__metadata": {
+                "id": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/LocationDetailsSet(ConstructionSite='01',LocationPart='22')",
+                "uri": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/LocationDetailsSet(ConstructionSite='01',LocationPart='22')",
+                "type": "BMW.APS_NEXT_SRV_VH_SRV.LocationDetails"
+            },
+            "ConstructionSite": "01",
+            "LocationPart": "22",
+            "LocationDescription": "BMW AG, BUERO FREIMA",
+            "LocationFlag": "",
+            "Sup_Cust_nr": ""
+        },
+        {
+            "__metadata": {
+                "id": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/LocationDetailsSet(ConstructionSite='01',LocationPart='23')",
+                "uri": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/LocationDetailsSet(ConstructionSite='01',LocationPart='23')",
+                "type": "BMW.APS_NEXT_SRV_VH_SRV.LocationDetails"
+            },
+            "ConstructionSite": "01",
+            "LocationPart": "23",
+            "LocationDescription": "BMW FORSCHUNG&TECHNI",
+            "LocationFlag": "",
+            "Sup_Cust_nr": "0059924710"
+        },
+        {
+            "__metadata": {
+                "id": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/LocationDetailsSet(ConstructionSite='01',LocationPart='24')",
+                "uri": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/LocationDetailsSet(ConstructionSite='01',LocationPart='24')",
+                "type": "BMW.APS_NEXT_SRV_VH_SRV.LocationDetails"
+            },
+            "ConstructionSite": "01",
+            "LocationPart": "24",
+            "LocationDescription": "BMW WELT",
+            "LocationFlag": "",
+            "Sup_Cust_nr": "0077348771"
+        },
+        {
+            "__metadata": {
+                "id": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/LocationDetailsSet(ConstructionSite='01',LocationPart='25')",
+                "uri": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/LocationDetailsSet(ConstructionSite='01',LocationPart='25')",
+                "type": "BMW.APS_NEXT_SRV_VH_SRV.LocationDetails"
+            },
+            "ConstructionSite": "01",
+            "LocationPart": "25",
+            "LocationDescription": "BMW AG FIZ WARENEING",
+            "LocationFlag": "",
+            "Sup_Cust_nr": ""
+        },
+        {
+            "__metadata": {
+                "id": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/LocationDetailsSet(ConstructionSite='01',LocationPart='26')",
+                "uri": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/LocationDetailsSet(ConstructionSite='01',LocationPart='26')",
+                "type": "BMW.APS_NEXT_SRV_VH_SRV.LocationDetails"
+            },
+            "ConstructionSite": "01",
+            "LocationPart": "26",
+            "LocationDescription": "BMW NL M, FILIALE IN",
+            "LocationFlag": "",
+            "Sup_Cust_nr": ""
+        },
+        {
+            "__metadata": {
+                "id": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/LocationDetailsSet(ConstructionSite='01',LocationPart='27')",
+                "uri": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/LocationDetailsSet(ConstructionSite='01',LocationPart='27')",
+                "type": "BMW.APS_NEXT_SRV_VH_SRV.LocationDetails"
+            },
+            "ConstructionSite": "01",
+            "LocationPart": "27",
+            "LocationDescription": "BMW NL M, FILIALE TR",
+            "LocationFlag": "",
+            "Sup_Cust_nr": ""
+        },
+        {
+            "__metadata": {
+                "id": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/LocationDetailsSet(ConstructionSite='01',LocationPart='28')",
+                "uri": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/LocationDetailsSet(ConstructionSite='01',LocationPart='28')",
+                "type": "BMW.APS_NEXT_SRV_VH_SRV.LocationDetails"
+            },
+            "ConstructionSite": "01",
+            "LocationPart": "28",
+            "LocationDescription": "BMW / DESIGNWORKSUSA",
+            "LocationFlag": "",
+            "Sup_Cust_nr": ""
+        },
+        {
+            "__metadata": {
+                "id": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/LocationDetailsSet(ConstructionSite='01',LocationPart='29')",
+                "uri": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/LocationDetailsSet(ConstructionSite='01',LocationPart='29')",
+                "type": "BMW.APS_NEXT_SRV_VH_SRV.LocationDetails"
+            },
+            "ConstructionSite": "01",
+            "LocationPart": "29",
+            "LocationDescription": "BMW NL M, FILIALE SO",
+            "LocationFlag": "",
+            "Sup_Cust_nr": ""
+        },
+        {
+            "__metadata": {
+                "id": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/LocationDetailsSet(ConstructionSite='01',LocationPart='30')",
+                "uri": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/LocationDetailsSet(ConstructionSite='01',LocationPart='30')",
+                "type": "BMW.APS_NEXT_SRV_VH_SRV.LocationDetails"
+            },
+            "ConstructionSite": "01",
+            "LocationPart": "30",
+            "LocationDescription": "BMW NIEDERLASSUNG MU",
+            "LocationFlag": "",
+            "Sup_Cust_nr": "0062514129"
+        },
+        {
+            "__metadata": {
+                "id": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/LocationDetailsSet(ConstructionSite='01',LocationPart='31')",
+                "uri": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/LocationDetailsSet(ConstructionSite='01',LocationPart='31')",
+                "type": "BMW.APS_NEXT_SRV_VH_SRV.LocationDetails"
+            },
+            "ConstructionSite": "01",
+            "LocationPart": "31",
+            "LocationDescription": "BMW BUEROGEB., KNORR",
+            "LocationFlag": "",
+            "Sup_Cust_nr": ""
+        },
+        {
+            "__metadata": {
+                "id": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/LocationDetailsSet(ConstructionSite='01',LocationPart='32')",
+                "uri": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/LocationDetailsSet(ConstructionSite='01',LocationPart='32')",
+                "type": "BMW.APS_NEXT_SRV_VH_SRV.LocationDetails"
+            },
+            "ConstructionSite": "01",
+            "LocationPart": "32",
+            "LocationDescription": "MITEC MIKROELEKTRONI",
+            "LocationFlag": "",
+            "Sup_Cust_nr": ""
+        },
+        {
+            "__metadata": {
+                "id": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/LocationDetailsSet(ConstructionSite='01',LocationPart='33')",
+                "uri": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/LocationDetailsSet(ConstructionSite='01',LocationPart='33')",
+                "type": "BMW.APS_NEXT_SRV_VH_SRV.LocationDetails"
+            },
+            "ConstructionSite": "01",
+            "LocationPart": "33",
+            "LocationDescription": "GBWAG",
+            "LocationFlag": "",
+            "Sup_Cust_nr": ""
+        },
+        {
+            "__metadata": {
+                "id": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/LocationDetailsSet(ConstructionSite='01',LocationPart='34')",
+                "uri": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/LocationDetailsSet(ConstructionSite='01',LocationPart='34')",
+                "type": "BMW.APS_NEXT_SRV_VH_SRV.LocationDetails"
+            },
+            "ConstructionSite": "01",
+            "LocationPart": "34",
+            "LocationDescription": "CIRQUENT GMBH",
+            "LocationFlag": "",
+            "Sup_Cust_nr": ""
+        },
+        {
+            "__metadata": {
+                "id": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/LocationDetailsSet(ConstructionSite='01',LocationPart='35')",
+                "uri": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/LocationDetailsSet(ConstructionSite='01',LocationPart='35')",
+                "type": "BMW.APS_NEXT_SRV_VH_SRV.LocationDetails"
+            },
+            "ConstructionSite": "01",
+            "LocationPart": "35",
+            "LocationDescription": "BMW VERTRIEB SUED /",
+            "LocationFlag": "",
+            "Sup_Cust_nr": "0062514130"
+        }
+    ], 
+    "AtArtSet": [
+            {
+                "__metadata": {
+                    "id": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/AtArtSet('')",
+                    "uri": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/AtArtSet('')",
+                    "type": "BMW.APS_NEXT_SRV_VH_SRV.AtArt"
+                },
+                "Value": "",
+                "Description": ""
+            },
+            {
+                "__metadata": {
+                    "id": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/AtArtSet('B1B')",
+                    "uri": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/AtArtSet('B1B')",
+                    "type": "BMW.APS_NEXT_SRV_VH_SRV.AtArt"
+                },
+                "Value": "B1B",
+                "Description": "Prio1 E/E BeMo Abs., B-Termin-konform (abgestimmt)"
+            },
+            {
+                "__metadata": {
+                    "id": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/AtArtSet('B1L')",
+                    "uri": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/AtArtSet('B1L')",
+                    "type": "BMW.APS_NEXT_SRV_VH_SRV.AtArt"
+                },
+                "Value": "B1L",
+                "Description": "Prio1 E/E BeMo Absicherung, Leadtime-konform"
+            },
+            {
+                "__metadata": {
+                    "id": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/AtArtSet('EB0')",
+                    "uri": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/AtArtSet('EB0')",
+                    "type": "BMW.APS_NEXT_SRV_VH_SRV.AtArt"
+                },
+                "Value": "EB0",
+                "Description": "Entwicklungs-Bedarfe (ohne KPP-Zuordnung)"
+            },
+            {
+                "__metadata": {
+                    "id": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/AtArtSet('HOM')",
+                    "uri": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/AtArtSet('HOM')",
+                    "type": "BMW.APS_NEXT_SRV_VH_SRV.AtArt"
+                },
+                "Value": "HOM",
+                "Description": "Homologation E/E-Umrüstungen"
+            },
+            {
+                "__metadata": {
+                    "id": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/AtArtSet('KPB')",
+                    "uri": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/AtArtSet('KPB')",
+                    "type": "BMW.APS_NEXT_SRV_VH_SRV.AtArt"
+                },
+                "Value": "KPB",
+                "Description": "KPP-/Entw.-Bedarfe, B-Termin-konform (abgestimmt)"
+            },
+            {
+                "__metadata": {
+                    "id": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/AtArtSet('KPL')",
+                    "uri": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/AtArtSet('KPL')",
+                    "type": "BMW.APS_NEXT_SRV_VH_SRV.AtArt"
+                },
+                "Value": "KPL",
+                "Description": "KPP-/Entwicklungs-Bedarfe, Leadtime-konform"
+            },
+            {
+                "__metadata": {
+                    "id": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/AtArtSet('MEC')",
+                    "uri": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/AtArtSet('MEC')",
+                    "type": "BMW.APS_NEXT_SRV_VH_SRV.AtArt"
+                },
+                "Value": "MEC",
+                "Description": "mechanische Umrüstungen (A4M1)"
+            },
+            {
+                "__metadata": {
+                    "id": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/AtArtSet('P1B')",
+                    "uri": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/AtArtSet('P1B')",
+                    "type": "BMW.APS_NEXT_SRV_VH_SRV.AtArt"
+                },
+                "Value": "P1B",
+                "Description": "Prio1 E/E Abs., Bedarfstermin-konform (abgestimmt)"
+            },
+            {
+                "__metadata": {
+                    "id": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/AtArtSet('P1L')",
+                    "uri": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/AtArtSet('P1L')",
+                    "type": "BMW.APS_NEXT_SRV_VH_SRV.AtArt"
+                },
+                "Value": "P1L",
+                "Description": "Prio1 E/E Absicherung, Leadtime-konform"
+            },
+            {
+                "__metadata": {
+                    "id": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/AtArtSet('P3R')",
+                    "uri": "https://localhost:8080/sap/opu/odata/BMW/APS_NEXT_SRV_VH_SRV/AtArtSet('P3R')",
+                    "type": "BMW.APS_NEXT_SRV_VH_SRV.AtArt"
+                },
+                "Value": "P3R",
+                "Description": "Prio3 E/E-Umrüstungen"
+            }
+        ]
+    }

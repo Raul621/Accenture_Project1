@@ -1,0 +1,96 @@
+<c:FragmentDefinition xmlns:filterbar="sap.ui.comp.filterbar"
+    xmlns="sap.m"
+    xmlns:c="sap.ui.core">
+
+    <filterbar:FilterBar id="fbAbgestimmtSearch"
+        showClearOnFB="true"
+        visible="{applicationModel>/bRestartVisibility}"
+        clear="onPressClearSearchAbgestimmtStep9"
+        search="onPressSearchAbgestimmtStep9">
+        <filterbar:filterGroupItems>
+            <filterbar:FilterGroupItem groupName="AbgestimmtSearchBar"
+                name="QX"
+                label="{i18n>text.qx}"
+                visibleInFilterBar="true">
+                <filterbar:control>
+                    <Input submit=""></Input>
+                </filterbar:control>
+            </filterbar:FilterGroupItem>
+            <filterbar:FilterGroupItem groupName="AbgestimmtSearchBar"
+                name="Lastname"
+                label="{i18n>text.lastname}"
+                visibleInFilterBar="true">
+                <filterbar:control>
+                    <Input submit=""></Input>
+                </filterbar:control>
+            </filterbar:FilterGroupItem>
+            <filterbar:FilterGroupItem groupName="AbgestimmtSearchBar"
+                name="Firstname"
+                label="{i18n>text.firstname}"
+                visibleInFilterBar="true">
+                <filterbar:control>
+                    <Input submit=""></Input>
+                </filterbar:control>
+            </filterbar:FilterGroupItem>
+            <filterbar:FilterGroupItem groupName="AbgestimmtSearchBar"
+                name="Department"
+                label="{i18n>text.fachbereich}"
+                visibleInFilterBar="true">
+                <filterbar:control>
+                    <Input submit=""></Input>
+                </filterbar:control>
+            </filterbar:FilterGroupItem>
+            <filterbar:FilterGroupItem groupName="AbgestimmtSearchBar"
+                name="Email"
+                label="{i18n>text.email}"
+                visibleInFilterBar="true">
+                <filterbar:control>
+                    <Input submit=""></Input>
+                </filterbar:control>
+            </filterbar:FilterGroupItem>
+
+        </filterbar:filterGroupItems>
+    </filterbar:FilterBar>
+
+    <ScrollContainer id="scAbgestimmtStep9"
+        visible="{applicationModel>/bRestartVisibility}"
+        vertical="true"
+        height="300px"
+        focusable="true">
+        <Table  id = "tableAbgestimmtStep9"
+        items="{applicationModel>/AbgestimmtList}"
+            mode="SingleSelectMaster"
+            itemPress="onPressSelectAbgestimmtStep9">
+            <columns>
+                <Column >
+                    <Label text="{i18n>text.qx}"/>
+                </Column>
+                <Column >
+                    <Label text="{i18n>text.lastname}" />
+                </Column>
+                <Column >
+                    <Label text="{i18n>text.firstname}"/>
+                </Column>
+                <Column >
+                    <Label text="{i18n>text.fachbereich}"/>
+                </Column>
+                <Column >
+                    <Label text="{i18n>text.email}"/>
+                </Column>
+
+            </columns>
+            <items>
+                <ColumnListItem id="cliAbgestimmtStep9"
+                    type="Active">
+                    <cells >
+                        <Text text="{applicationModel>QX}"></Text>
+                        <Text text="{applicationModel>Lastname}"></Text>
+                        <Text text="{applicationModel>Firstname}"></Text>
+                        <Text text="{applicationModel>Department}"></Text>
+                        <Text text="{applicationModel>Email}"></Text>
+                    </cells>
+                </ColumnListItem>
+            </items>
+        </Table>
+    </ScrollContainer>
+</c:FragmentDefinition>

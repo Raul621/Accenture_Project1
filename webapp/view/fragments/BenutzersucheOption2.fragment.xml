@@ -1,0 +1,102 @@
+<c:FragmentDefinition xmlns:filterbar="sap.ui.comp.filterbar"
+    xmlns="sap.m"
+    xmlns:c="sap.ui.core">
+
+    <filterbar:FilterBar id="fbBenutzersucheOpt2"
+        showClearOnFB="true"
+        visible="true"
+        clear="onPressClearSearchBenutzerStep7"
+        search="onPressSearchBenutzerStep7">
+        
+        <filterbar:filterGroupItems>
+            <filterbar:FilterGroupItem groupName="BenutzerSearchBar"
+                name="QX"
+                label="{i18n>text.qx}"
+                visibleInFilterBar="true">
+                <filterbar:control>
+                    <Input value="{applicationModel>/QX}" submit="onPressSearchBenutzerStep7" />
+                </filterbar:control>
+            </filterbar:FilterGroupItem>
+            
+            <filterbar:FilterGroupItem groupName="BenutzerSearchBar"
+                name="Lastname"
+                label="{i18n>text.lastname}"
+                visibleInFilterBar="true">
+                <filterbar:control>
+                    <Input value="{applicationModel>/Lastname}" submit="onPressSearchBenutzerStep7" />
+                </filterbar:control>
+            </filterbar:FilterGroupItem>
+            
+            <filterbar:FilterGroupItem groupName="BenutzerSearchBar"
+                name="Firstname"
+                label="{i18n>text.firstname}"
+                visibleInFilterBar="true">
+                <filterbar:control>
+                    <Input value="{applicationModel>/Firstname}" submit="onPressSearchBenutzerStep7" />
+                </filterbar:control>
+            </filterbar:FilterGroupItem>
+            
+            <filterbar:FilterGroupItem groupName="BenutzerSearchBar"
+                name="Department"
+                label="{i18n>text.fachbereich}"
+                visibleInFilterBar="true">
+                <filterbar:control>
+                    <Input value="{applicationModel>/Department}" submit="onPressSearchBenutzerStep7" />
+                </filterbar:control>
+            </filterbar:FilterGroupItem>
+            
+            <filterbar:FilterGroupItem groupName="BenutzerSearchBar"
+                name="Email"
+                label="{i18n>text.email}"
+                visibleInFilterBar="true">
+                <filterbar:control>
+                    <Input value="{applicationModel>/Email}" submit="onPressSearchBenutzerStep7" />
+                </filterbar:control>
+            </filterbar:FilterGroupItem>
+        </filterbar:filterGroupItems>
+    </filterbar:FilterBar>
+
+    <ScrollContainer id="scbenutzerStep7Opt2"
+        visible="true"
+        height="300px"
+        vertical="true"
+        focusable="true">
+        
+        <Table id="tableBenutzersucheOpt2"
+            items="{applicationModel>/BenutzersucheList}"
+            mode="SingleSelectMaster"
+            height="auto"
+            itemPress="onPressSelectBenutzerStep7">
+            
+            <columns>
+                <Column>
+                    <Text text="{i18n>text.qx}"/>
+                </Column>
+                <Column>
+                    <Text text="{i18n>text.lastname}"/>
+                </Column>
+                <Column>
+                    <Text text="{i18n>text.firstname}"/>
+                </Column>
+                <Column>
+                    <Text text="{i18n>text.fachbereich}"/>
+                </Column>
+                <Column>
+                    <Text text="{i18n>text.email}"/>
+                </Column>
+            </columns>
+            
+            <items>
+                <ColumnListItem id="cliBenutzerStep7Opt2" type="Active">
+                    <cells>
+                        <Text text="{applicationModel>QX}"/>
+                        <Text text="{applicationModel>Lastname}"/>
+                        <Text text="{applicationModel>Firstname}"/>
+                        <Text text="{applicationModel>Department}"/>
+                        <Text text="{applicationModel>Email}"/>
+                    </cells>
+                </ColumnListItem>
+            </items>
+        </Table>
+    </ScrollContainer>
+</c:FragmentDefinition>

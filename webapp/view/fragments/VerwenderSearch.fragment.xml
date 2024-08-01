@@ -1,0 +1,94 @@
+<c:FragmentDefinition xmlns:filterbar="sap.ui.comp.filterbar"
+    xmlns="sap.m"
+    xmlns:c="sap.ui.core">
+    <VBox fitContainer="true">
+        <filterbar:FilterBar id="fbVerwenderSearch"
+            showClearOnFB="true"
+            visible="{applicationModel>/bRestartVisibility}"
+            clear="onPressClearSearchVerwenderStep6"
+            search="onPressSearchVerwenderStep6">
+            <filterbar:filterGroupItems>
+                <filterbar:FilterGroupItem groupName="VerwenderSearchBar"
+                    name="QX"
+                    label="{i18n>text.qx}"
+                    visibleInFilterBar="true">
+                    <filterbar:control>
+                        <Input submit=""></Input>
+                    </filterbar:control>
+                </filterbar:FilterGroupItem>
+                <filterbar:FilterGroupItem groupName="VerwenderSearchBar"
+                    name="Lastname"
+                    label="{i18n>text.lastname}"
+                    visibleInFilterBar="true">
+                    <filterbar:control>
+                        <Input submit=""></Input>
+                    </filterbar:control>
+                </filterbar:FilterGroupItem>
+                <filterbar:FilterGroupItem groupName="VerwenderSearchBar"
+                    name="Firstname"
+                    label="{i18n>text.firstname}"
+                    visibleInFilterBar="true">
+                    <filterbar:control>
+                        <Input submit=""></Input>
+                    </filterbar:control>
+                </filterbar:FilterGroupItem>
+                <filterbar:FilterGroupItem groupName="VerwenderSearchBar"
+                    name="Department"
+                    label="{i18n>text.fachbereich}"
+                    visibleInFilterBar="true">
+                    <filterbar:control>
+                        <Input submit=""></Input>
+                    </filterbar:control>
+                </filterbar:FilterGroupItem>
+                <filterbar:FilterGroupItem groupName="VerwenderSearchBar"
+                    name="Email"
+                    label="{i18n>text.email}"
+                    visibleInFilterBar="true">
+                    <filterbar:control>
+                        <Input submit=""></Input>
+                    </filterbar:control>
+                </filterbar:FilterGroupItem>
+            </filterbar:filterGroupItems>
+        </filterbar:FilterBar>
+        <ScrollContainer id="scVerwenderStep5"
+            visible="{applicationModel>/bRestartVisibility}"
+            vertical="true"
+            focusable="true"
+            height="300px">
+            <Table id="VerwenderSearchTable"
+                items="{applicationModel>/Step5VerwenderList}"
+                mode="SingleSelectMaster"
+                updateFinished="onTableUpdateFinished2"
+                itemPress="onPressSelectVerwenderStep6">
+                <columns>
+                    <Column>
+                        <Label text="{i18n>text.qx}" />
+                    </Column>
+                    <Column>
+                        <Label text="{i18n>text.lastname}" />
+                    </Column>
+                    <Column>
+                        <Label text="{i18n>text.firstname}" />
+                    </Column>
+                    <Column>
+                        <Label text="{i18n>text.fachbereich}" />
+                    </Column>
+                    <Column>
+                        <Label text="{i18n>text.email}" />
+                    </Column>
+                </columns>
+                <items>
+                    <ColumnListItem id="cliVerwenderStep5" type="Active">
+                        <cells>
+                            <Text text="{applicationModel>QX}" />
+                            <Text text="{applicationModel>Lastname}" />
+                            <Text text="{applicationModel>Firstname}" />
+                            <Text text="{applicationModel>Department}" />
+                            <Text text="{applicationModel>Email}" />
+                        </cells>
+                    </ColumnListItem>
+                </items>
+            </Table>
+        </ScrollContainer>
+    </VBox>
+</c:FragmentDefinition>

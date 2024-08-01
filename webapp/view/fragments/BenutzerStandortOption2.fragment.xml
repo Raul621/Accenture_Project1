@@ -1,0 +1,77 @@
+<c:FragmentDefinition xmlns:filterbar="sap.ui.comp.filterbar"
+    xmlns="sap.m"
+    xmlns:c="sap.ui.core">
+
+    <VBox>
+        <!-- Fixed FilterBar -->
+        <filterbar:FilterBar id="fbBenutzerStandortOpt2"
+            showClearOnFB="true"
+            visible="{applicationModel>/bRestartVisibility}"
+            clear="onPressClear1SearchAdressStep7"
+            search="onPressSearch1AdressStep7">
+            <!-- Filter group items -->
+            <filterbar:filterGroupItems>
+                <filterbar:FilterGroupItem groupName="BenutzerStandort"
+                    name="Bauort"
+                    label="{i18n>text.bauort}"
+                    visibleInFilterBar="true">
+                    <filterbar:control>
+                        <Input id="bauortInputOpt2"
+                            value="{applicationModel>/ConstructionSite}"
+                            submit="onPressSearch1AdressStep7" />
+                    </filterbar:control>
+                </filterbar:FilterGroupItem>
+                <filterbar:FilterGroupItem groupName="BenutzerStandort"
+                    name="Standortteil"
+                    label="{i18n>text.standortteil}"
+                    visibleInFilterBar="true">
+                    <filterbar:control>
+                        <Input id="standortteilInputOpt2"
+                            value="{applicationModel>/LocationPart}"
+                            submit="onPressSearch1AdressStep7" />
+                    </filterbar:control>
+                </filterbar:FilterGroupItem>
+            </filterbar:filterGroupItems>
+        </filterbar:FilterBar>
+
+        <!-- Scrollable Table Container -->
+        <ScrollContainer id="scLocationStep7Opt2"
+            visible="{applicationModel>/bRestartVisibility}"
+            vertical="true"
+            height="300px"
+            focusable="true"
+            contentHeight="auto">
+
+            <Table id="tableBenutzerStandortOpt2"
+                items="{applicationModel>/BenutzerStandortList}"
+                mode="SingleSelectMaster"
+                height="auto"
+                itemPress="onPressSelectLocationStep7">
+                <columns>
+                    <Column>
+                        <Label text="{i18n>text.bauort}"/>
+                    </Column>
+                    <Column>
+                        <Label text="{i18n>text.standortteil}" />
+                    </Column>
+                    <Column>
+                        <Label text="{i18n>text.kurztext}"/>
+                    </Column>
+                    <Column>
+                        <Label text="{i18n>text.debitorennummer}"/>
+                    </Column>
+                </columns>
+                <items>
+                    <ColumnListItem id="cliLocationStep7Opt2" type="Active">
+                        <cells>
+                            <Text text="{applicationModel>ConstructionSite}"></Text>
+                            <Text text="{applicationModel>LocationPart}"></Text>
+                            <Text text="{applicationModel>LocationDescription}"></Text>
+                            <Text text="{applicationModel>Sup_Cust_nr}"></Text>
+                        </cells>
+                    </ColumnListItem>
+                </items>
+            </Table>
+        </ScrollContainer>
+    </VBox>
+</c:FragmentDefinition>

@@ -1,0 +1,113 @@
+<c:FragmentDefinition xmlns="sap.m"
+    xmlns:c="sap.ui.core"
+    xmlns:filterbar="sap.ui.comp.filterbar">
+    <VBox>
+        <filterbar:FilterBar id="fbExternalReceiversOpt2"
+            showClearOnFB="true"
+            visible="{applicationModel>/bRestartVisibility}"
+            clear="onPressClearSearchExternalReceivers"
+            search="onPressSearchExternalReceivers">
+            <filterbar:filterGroupItems>
+                    <filterbar:FilterGroupItem groupName="ExternalReceiversSearchBar"
+                        name="Sup_Cust_nr"
+                        label="{i18n>text.supplier}"
+                        visibleInFilterBar="true">
+                        <filterbar:control>
+                            <Input id="inputSupCustNrSearchOpt2"
+                                submit="onSubmitFilter"
+                                value="{applicationModel>/Sup_Cust_nr}" />
+                        </filterbar:control>
+                    </filterbar:FilterGroupItem>
+                    <filterbar:FilterGroupItem groupName="ExternalReceiversSearchBar"
+                        name="Department"
+                        label="{i18n>text.company}"
+                        visibleInFilterBar="true">
+                        <filterbar:control>
+                            <Input id="inputDepartmentSearchOpt2"
+                                submit="onSubmitFilter"
+                                value="{applicationModel>/Department}" />
+                        </filterbar:control>
+                    </filterbar:FilterGroupItem>
+                    <filterbar:FilterGroupItem groupName="ExternalReceiversSearchBar"
+                        name="Street"
+                        label="{i18n>text.street}"
+                        visibleInFilterBar="true">
+                        <filterbar:control>
+                            <Input id="inputStreetSearchOpt2"
+                                submit="onSubmitFilter"
+                                value="{applicationModel>/Street}" />
+                        </filterbar:control>
+                    </filterbar:FilterGroupItem>
+                    <filterbar:FilterGroupItem groupName="ExternalReceiversSearchBar"
+                        name="Land"
+                        label="{i18n>text.country}"
+                        visibleInFilterBar="true">
+                        <filterbar:control>
+                            <Input id="inputLandSearchOpt2"
+                                submit="onSubmitFilter"
+                                value="{applicationModel>/Land}" />
+                        </filterbar:control>
+                    </filterbar:FilterGroupItem>
+                    <filterbar:FilterGroupItem groupName="ExternalReceiversSearchBar"
+                        name="PLZ"
+                        label="{i18n>text.zip}"
+                        visibleInFilterBar="true">
+                        <filterbar:control>
+                            <Input id="inputPLZSearchOpt2"
+                                submit="onSubmitFilter"
+                                value="{applicationModel>/PLZ}" />
+                        </filterbar:control>
+                    </filterbar:FilterGroupItem>
+                    <filterbar:FilterGroupItem groupName="ExternalReceiversSearchBar"
+                        name="Ort"
+                        label="{i18n>text.place}"
+                        visibleInFilterBar="true">
+                        <filterbar:control>
+                            <Input id="inputOrtSearchOpt2"
+                                submit="onSubmitFilter"
+                                value="{applicationModel>/Ort}" />
+                        </filterbar:control>
+                    </filterbar:FilterGroupItem>
+                </filterbar:filterGroupItems>
+            </filterbar:FilterBar>
+            <ScrollContainer id="scExternalReceiversOpt2"
+                visible="true"
+                vertical="true"
+                height="300px"
+                focusable="true"
+                contentHeight="auto">
+                <Table id="tableExternalReceiversOpt2"
+                    items="{applicationModel>/External_receiverSet}"
+                    mode="SingleSelectMaster"
+                    height="auto"
+                    updateFinished="onTableUpdateFinished4"
+                    itemPress="onPressSelectExternalReceiver15">
+                <!-- Columns -->
+                <columns>
+                    <Column>
+                        <Label text="{i18n>text.supplier}" />
+                    </Column>
+                    <Column>
+                        <Label text="{i18n>text.company}" />
+                    </Column>
+                    <Column>
+                        <Label text="{i18n>text.street}" />
+                    </Column>
+                    <Column>
+                        <Label text="{i18n>text.country_zip_place}" />
+                    </Column>
+                </columns>
+                <items>
+                    <ColumnListItem id="cliBenutzerLIefrungStep5Opt2" type="Active">
+                        <cells>
+                            <Text text="{applicationModel>Sup_Cust_nr}" />
+                            <Text text="{applicationModel>Department}" />
+                            <Text text="{applicationModel>Street}" />
+                            <Text text="{applicationModel>Country_ZIP_Place}" />
+                        </cells>
+                    </ColumnListItem>
+                </items>
+            </Table>
+        </ScrollContainer>
+    </VBox>
+</c:FragmentDefinition>

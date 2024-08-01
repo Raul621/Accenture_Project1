@@ -1,0 +1,103 @@
+<core:FragmentDefinition xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+    xmlns:l="sap.ui.layout"
+    xmlns:filterbar="sap.ui.comp.filterbar">
+
+    <Dialog id="UserSelectionDialog" title="{i18n>text1Form.wizard1.step9}" class="sapUiContentPadding">
+
+        <!-- FilterBar for filtering items -->
+        <filterbar:FilterBar id="filterBarInternalSelection"
+            showClearOnFB="true"
+            visible="true"
+            clear = "onPressClearUserSelectDetails"
+            search="onUserSelectionSearchFilter">
+            
+            <!-- Filter group items -->
+            <filterbar:filterGroupItems>
+                <filterbar:FilterGroupItem groupName="UserSelectionSearch"
+                    name="QX"
+                    label="{i18n>text.qx}"
+                    visibleInFilterBar="true">
+                    <filterbar:control>
+                        <Input value="{applicationModel>/QX}" submit="onSearchFilter" />
+                    </filterbar:control>
+                </filterbar:FilterGroupItem>
+                <filterbar:FilterGroupItem groupName="UserSelectionSearch"
+                    name="Lastname"
+                    label="{i18n>text.lastname}"
+                    visibleInFilterBar="true">
+                    <filterbar:control>
+                        <Input value="{applicationModel>/Lastname}" submit="onSearchFilter" />
+                    </filterbar:control>
+                </filterbar:FilterGroupItem>
+                <filterbar:FilterGroupItem groupName="UserSelectionSearch"
+                    name="Firstname"
+                    label="{i18n>text.firstname}"
+                    visibleInFilterBar="true">
+                    <filterbar:control>
+                        <Input value="{applicationModel>/Firstname}" submit="onSearchFilter" />
+                    </filterbar:control>
+                </filterbar:FilterGroupItem>
+                <filterbar:FilterGroupItem groupName="UserSelectionSearch"
+                    name="Department"
+                    label="{i18n>text.fachbereich}"
+                    visibleInFilterBar="true">
+                    <filterbar:control>
+                        <Input value="{applicationModel>/Department}" submit="onSearchFilter" />
+                    </filterbar:control>
+                </filterbar:FilterGroupItem>
+                <filterbar:FilterGroupItem groupName="UserSelectionSearch"
+                    name="Email"
+                    label="{i18n>text.email}"
+                    visibleInFilterBar="true">
+                    <filterbar:control>
+                        <Input value="{applicationModel>/Email}" submit="onSearchFilter" />
+                    </filterbar:control>
+                </filterbar:FilterGroupItem>
+            </filterbar:filterGroupItems>
+        </filterbar:FilterBar>
+
+        <!-- Table to display filtered items -->
+        <Table id="tableUserSelection"
+            items="{applicationModel>/User_detailsSet}"
+            mode="SingleSelectMaster"
+            selectionChange="onUserSelectionChange">
+            <columns>
+                <Column>
+                    <Text text="{i18n>text.qx}" />
+                </Column>
+                <Column>
+                    <Text text="{i18n>text.lastname}" />
+                </Column>
+                <Column>
+                    <Text text="{i18n>text.firstname}" />
+                </Column>
+                <Column>
+                    <Text text="{i18n>text.fachbereich}" />
+                </Column>
+                <Column>
+                    <Text text="{i18n>text.email}" />
+                </Column>
+            </columns>
+            <items>
+                <ColumnListItem type="Active">
+                    <cells>
+                        <Text text="{applicationModel>QX}" />
+                        <Text text="{applicationModel>Lastname}" />
+                        <Text text="{applicationModel>Firstname}" />
+                        <Text text="{applicationModel>Department}" />
+                        <Text text="{applicationModel>Email}" />
+                    </cells>
+                </ColumnListItem>
+            </items>
+        </Table>
+
+        <!-- Begin and End buttons for Dialog -->
+        <beginButton>
+            <Button text="{i18n>txt.search}" press="onInternalUserSelectionDialogClose" type="Accept" />
+        </beginButton>
+        <endButton>
+            <Button text="{i18n>btn.cancel}" press="onInternalUserSelectionDialogClose" type="Reject" />
+        </endButton>
+    </Dialog>
+</core:FragmentDefinition>

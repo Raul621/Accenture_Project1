@@ -1,0 +1,71 @@
+<c:FragmentDefinition xmlns:filterbar="sap.ui.comp.filterbar"
+    xmlns="sap.m"
+    xmlns:c="sap.ui.core">
+
+    <filterbar:FilterBar id="fbAdressSearch"
+        showClearOnFB="true"
+        visible="{applicationModel>/bRestartVisibility}"
+        clear="onPressClearSearchAdressStep7"
+        search="onPressSearchAdressStep7">
+        <filterbar:filterGroupItems>
+            <filterbar:FilterGroupItem groupName="VerwenderSearchBar"
+                name="Sup_Cust_nr"
+                label="{i18n>text.sup_cust_nr}"
+                visibleInFilterBar="true">
+                <filterbar:control>
+                    <Input submit=""></Input>
+                </filterbar:control>
+            </filterbar:FilterGroupItem>
+            <filterbar:FilterGroupItem groupName="VerwenderSearchBar"
+                name="Department"
+                label="{i18n>text.department}"
+                visibleInFilterBar="true">
+                <filterbar:control>
+                    <Input submit=""></Input>
+                </filterbar:control>
+            </filterbar:FilterGroupItem>
+            <filterbar:FilterGroupItem groupName="VerwenderSearchBar"
+                name="Street"
+                label="{i18n>text.street}"
+                visibleInFilterBar="true">
+                <filterbar:control>
+                    <Input submit=""></Input>
+                </filterbar:control>
+            </filterbar:FilterGroupItem>
+            <!-- Add more FilterGroupItems as needed for other fields -->
+        </filterbar:filterGroupItems>
+    </filterbar:FilterBar>
+
+    <ScrollContainer id="scVerwenderStep7"
+        visible="{applicationModel>/bRestartVisibility}"
+        vertical="true"
+        focusable="true">
+        <Table items="{applicationModel>/External_receiverSet}"
+            mode="SingleSelectMaster"
+            itemPress="onPressSelectAdressStep7">
+            <columns>
+                <Column>
+                    <Label text="{i18n>text.sup_cust_nr}"/>
+                </Column>
+                <Column>
+                    <Label text="{i18n>text.department}" />
+                </Column>
+                <Column>
+                    <Label text="{i18n>text.street}"/>
+                </Column>
+                <!-- Add more columns for other fields -->
+            </columns>
+            <items>
+                <ColumnListItem id="cliVerwenderStep7"
+                    type="Active">
+                    <cells>
+                        <Text text="{applicationModel>Sup_Cust_nr}"></Text>
+                        <Text text="{applicationModel>Department}"></Text>
+                        <Text text="{applicationModel>Street}"></Text>
+                        <!-- Add more Text controls for other fields -->
+                    </cells>
+                </ColumnListItem>
+            </items>
+        </Table>
+    </ScrollContainer>
+</c:FragmentDefinition>

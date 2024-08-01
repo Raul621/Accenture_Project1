@@ -1,0 +1,707 @@
+<c:FragmentDefinition xmlns="sap.m"
+    xmlns:c="sap.ui.core"
+    xmlns:form="sap.ui.layout.form">
+
+    <!--WIZZARD 2-->
+	<WizardStep id="wizard_3_2"
+        nextStep="wizard_3"
+        validated="false"
+        complete="onPressNextStep2"
+        title="{i18n>text.wizard6.step2}">
+
+        <FlexBox id="messageStripStep2"
+            width="40%"
+            class="sapUiTinyMarginTop">
+            <MessageStrip text="{i18n>msg.step3_Kostenstelle}">
+            </MessageStrip>
+        </FlexBox>
+
+        <Input id="inputStep2"
+            liveChange="onLiveChangeInputStep2"
+            class="sapUiSmallMarginBottom"
+            maxLength="4"
+            width="30%"
+            value="{applicationModel>/Wizard/Step2CostCenter}"
+            placeholder="{i18n>placeholder.wizard.step3}"
+            valueLiveUpdate="true"
+            showValueStateMessage="false"
+            valueState="{applicationModel>/Wizard/Step2CostCenterValueState}">
+        </Input>
+    </WizardStep>
+
+    <!--WIZZARD 3-->
+    <WizardStep id="wizard_3"
+        nextStep="wizard_4"
+        validated="false"
+        complete="onPressNextStep3"
+        title="{i18n>text.wizard3.step3}">
+
+        <TextArea liveChange="onLiveChangeInputStep3"
+            id="txtStep3"
+            width="20%"
+            value="{applicationModel>/Wizard/Step3Verwendung}"
+            valueLiveUpdate="true"
+            class="sapUiSmallMarginBottom"></TextArea>
+    </WizardStep>
+
+    <!--WIZZARD 4-->
+    <WizardStep id="wizard_4"
+        nextStep="wizard_5"
+        activate="onActivateStep4"
+        validated="false"
+        complete="onPressNextStep4"
+        title="{i18n>text.wizard1.step5}">
+
+        <VBox class="sapUiSmallMarginBottom">
+            <Label text="{i18n>lbl.derivate_baukasten_project}"/>
+            <ComboBox id="comboStep4"
+                width="30%"
+                valueState="None"
+                change="onChangeComboBoxStep4"
+                items="{applicationModel>/Step4Values}">
+                <c:Item key="{applicationModel>Project}"
+                    text="{applicationModel>Project}"></c:Item>
+            </ComboBox>
+        </VBox>
+    </WizardStep>
+
+    <!--WIZZARD 5-->
+    <WizardStep id="wizard_5"
+        nextStep="wizard_6"
+        activate="onActivateStep5"
+        validated="false"
+        complete="onPressNextStep5"
+        title="{i18n>text.wizard1.step6}">
+
+        <VBox class="sapUiSmallMarginBottom">
+            <Label text="{i18n>lbl.mt_bg_vorserie}"/>
+            <ComboBox id="comboStep5"
+                width="30%"
+                valueState="None"
+                change="onChangeComboBoxStep5"
+                items="{applicationModel>/Step5Values}">
+                <c:Item key="{applicationModel>BBG}"
+                        text="{applicationModel>BBG}"></c:Item>
+            </ComboBox>
+        </VBox>
+    </WizardStep>
+
+    
+    <!--WIZZARD 6-->
+	<WizardStep id="wizard_6"
+        nextStep="wizard_7"
+        validated="false"
+        activate="onActivateStep6"
+        complete="onPressNextStep6"
+        title="{i18n>text.wizard1.step7}">
+        <FlexBox class="sapUiLargeMarginBegin"
+            width="40%"
+            visible="true"
+            id="fbVerwender">
+            <ToggleButton id="btnYesStep6"
+                text="{i18n>btn.myself}"
+                width="70%"
+                press="onPressButtonYesStep6">
+                <layoutData>
+                    <FlexItemData growFactor="1"/>
+                </layoutData>
+            </ToggleButton>
+            <ToggleButton id="btnNoStep6"
+                text="{i18n>btn.andere_person}"
+                width="70%"
+                press="onPressButtonNoStep6">
+                <layoutData>
+                    <FlexItemData growFactor="1"/>
+                </layoutData>
+            </ToggleButton>
+        </FlexBox>
+        <FlexBox id="fboxVerwender"
+            direction="Column"
+            class="sapUiSmallMarginBottom">
+            <Panel id="panelVerwender1"
+                visible="{applicationModel>/bRestartVisibility}"
+                headerText="{i18n>text.verwender}">
+                <c:Fragment fragmentName="project1.view.fragments.VerwenderSearch"
+                    type="XML" />
+            </Panel>
+        </FlexBox>
+    </WizardStep>
+
+    <!--WIZZARD 7(pe YES avem 2 tabele cu Benutzersuche si Benutzer, iar pe NO avem 1 tabel cu Adrese)-->
+    <WizardStep id="wizard_7"
+        nextStep="wizard_8"
+        validated="false"
+        activate="onActivateStep7"
+        complete="onPressNextStep7"
+        title="{i18n>text.wizard1.step8}">
+        <ScrollContainer id="scrollContainerStep7" horizontal="false" vertical="true" height="100%">
+            <FlexBox class="sapUiMediumMarginBeginEnd"
+                direction="Column"
+                width="100%">
+                <HBox>
+                    <Label text="{i18n>txt.standort_anlieferung}" class="sapUiSmallMarginEnd"/>
+                    <TextArea id="textareaStandort"
+                        value="A117 [BMW Motorrad]"
+                        editable="false"
+                        width="100%"
+                        growing="true"
+                        growingMaxLines="1"
+                        rows="1" />
+                </HBox>
+                <!-- Buttons similar to Wizard Step 6 -->
+                <FlexBox id="fbVerwender1"
+                    width="40%"
+                    visible="true"
+                    class="sapUiSmallMarginTop">
+                    <ToggleButton id="btnYesStep7"
+                        text="{i18n>text1Form.wizard1.step9}"
+                        width="70%"
+                        press="onPressButtonYesStep7">
+                        <layoutData>
+                            <FlexItemData growFactor="1"/>
+                        </layoutData>
+                    </ToggleButton>
+                    <ToggleButton id="btnNoStep7"
+                        text="{i18n>text2Form.wizard1.step9}"
+                        width="70%"
+                        press="onPressButtonNoStep7">
+                        <layoutData>
+                            <FlexItemData growFactor="1"/>
+                        </layoutData>
+                    </ToggleButton>
+                </FlexBox>
+                <!-- Panels with Tables -->
+                <FlexBox id="fboxSearchAdress"
+                    direction="Column"
+                    class="sapUiSmallMarginBottom">
+                    <!-- First Panel (Benutzersuche) -->
+                    <Panel id="panelBenutzersuche"
+                        visible="false"
+                        headerText="{i18n>text.benutzersuche}"
+                        expanded="{applicationModel>/bFirstPanelExpanded}"
+                        expandable="true"
+                        press="onPanelExpandCollapse">
+                        <c:Fragment fragmentName="project1.view.fragments.Benutzersuche"
+                            type="XML" />
+                    </Panel>
+                    <!-- Second Panel (Benutzer Standort) -->
+                    <Panel id="panelBenutzerStandort"
+                        visible="false"
+                        headerText="{i18n>text.benutzer_standort}"
+                        expanded="{applicationModel>/bPanelVerwenderExpanded}"
+                        expandable="true"
+                        press="onPanelExpandCollapse">
+                        <c:Fragment fragmentName="project1.view.fragments.BenutzerStandort"
+                            type="XML" />
+                    </Panel>
+                </FlexBox>
+                <!-- Verwender Panel -->
+                <FlexBox id="fboxVerwender1"
+                    direction="Column"
+                    class="sapUiSmallMarginBottom"
+                    visible="{applicationModel>/bRestartVisibility}">
+                    <Panel id="panelBenutsersucheLieferung"
+                        visible="{applicationModel>/bThirdPanelVisible}"
+                        headerText="{i18n>text.benutzersuche}"
+                        expanded="{applicationModel>/bVerwenderExpanded}"
+                        expandable="true"
+                        press="onVerwenderPanelExpandCollapse">
+                        <c:Fragment fragmentName="project1.view.fragments.BenutsersucheLieferung"
+                            type="XML" />
+                    </Panel>
+                </FlexBox>
+            </FlexBox>
+        </ScrollContainer>
+    </WizardStep>
+
+    <!--WIZZARD 8-->
+    <WizardStep id="wizard_8"
+        nextStep="wizard_9"
+        validated="false"
+        activate="onActivateStep8"
+        complete="onPressNextStep8"
+        title="{i18n>text.wizard1.step10}">
+
+        <VBox class="sapUiSmallMarginBottom">
+            <ComboBox id="comboStep8"
+                width="30%"
+                valueState="None"
+                selectionChange="onSelectionChangeComboBoxStep8">
+                <c:Item key="text1.wizard1.step10" text="{i18n>text1.wizard1.step10}" />
+                <c:Item key="text2.wizard1.step10" text="{i18n>text2.wizard1.step10}" />
+            </ComboBox>
+
+            <DatePicker id="datePickerStep8"
+                change="onDatePickerStep8Change"
+                valueLiveUpdate="true"
+                liveChange="onLiveChangeDatePickerStep8"
+                width="30%" />
+        </VBox>
+
+    </WizardStep>
+
+    <!--WIZZARD 9-->
+	<WizardStep id="wizard_9"
+        nextStep="wizard_10"
+        validated="false"
+        activate="onActivateStep9"
+        complete="onPressNextStep9"
+        title="{i18n>text.wizard3.step7}">
+
+        <FlexBox id="fbStep9"
+                width="40%"
+                visible="true"
+                class="sapUiSmallMarginTop">
+                <ToggleButton id="BtnPressYes9"
+                    text="{i18n>btn.yes}"
+                    width="70%"
+                    press="onPressButtonYesStep9">
+                    <layoutData>
+                        <FlexItemData growFactor="1"/>
+                    </layoutData>
+                </ToggleButton>
+                <ToggleButton id="BtnPressNo9"
+                    text="{i18n>btn.no}"
+                    width="70%"
+                    press="onPressButtonNo9">
+                    <layoutData>
+                        <FlexItemData growFactor="1"/>
+                    </layoutData>
+                </ToggleButton>
+        </FlexBox>
+        <FlexBox id="fBoxStep9"
+                direction="Column"
+                class="sapUiSmallMarginBottom"
+                visible="{applicationModel>/bRestartVisibility}">
+                <Panel id="panelAbgetstimmt"
+                    visible="{applicationModel>/bFirstPanelVisible}"
+                    headerText="{i18n>text.abgestimmt}"
+                    expanded="{applicationModel>/bFirstPanelExpanded}"
+                    expandable="true"
+                    press="onPanelExpandCollapse">
+                    <c:Fragment fragmentName="project1.view.fragments.Abgestimmt"
+                        type="XML" />
+                </Panel>
+        </FlexBox>
+        
+
+    </WizardStep>
+
+
+    <!--WIZZARD 10-->
+	<WizardStep id="wizard_10"
+        nextStep="wizard_11"
+        validated="false"
+        complete="onPressNextStep10"
+        activate="onActivateSummary"
+        title="{i18n>text.wizard1.step8}">
+
+        <form:SimpleForm editable="true"
+            id="formSummary"
+            columnsXL="3"
+            columnsL="3"
+            columnsM="3"
+            emptySpanXL="0"
+            layout="ResponsiveGridLayout">
+
+            <!-- General -->
+             <!-- Verific bNotEditableSummaryFields si proprietatile pt disabled /Wizard/bEnableSummaryFields fara /Wizard/-->
+            <c:Title text="Allgemeine Daten" />
+
+            <Label text="{i18n>txt.standort_anlieferung}"/>
+                <Input id="inputDerivateSummary"
+                    value="A117[BMW Motorrad]"
+                    required="true"
+                    editable="{applicationModel>/bNotEditableSummaryFields}"
+                    />
+            <Label text="{i18n>lbl.derivate_baukasten_project}"/>
+                <ComboBox change="onChangeComboBoxDerivateSummary"
+                    items="{applicationModel>/Step4Values}"
+                    selectedKey="{applicationModel>/Wizard/Step4SelectedValue}"
+                    required="true"
+                    editable="{applicationModel>/Wizard/bEnableSummaryFields}"
+                    id="cboxDerivateSummary1">
+                    <c:Item key="{applicationModel>Project}"
+                        text="{applicationModel>Project}"></c:Item>
+                </ComboBox>
+            <Label text="{i18n>lbl.build_phase}"/>
+                <ComboBox id="onChangeComboBoxDerivateSummary"
+                valueState="None"
+                required="true"
+                change="onChangeComboBoxStep5Summary"
+                items="{applicationModel>/Step5Values}"
+                selectedKey="{applicationModel>/Wizard/Step5SelectedValue}">
+                <c:Item key="{applicationModel>BBG}"
+                        text="{applicationModel>BBG}"></c:Item>
+            </ComboBox>
+            <Label text="{i18n>lbl5.wizard1.step12}"/>
+                <TextArea
+                    liveChange="onLiveChangeInputStep10Summary"
+                    id="txtStep111"
+                    value="{applicationModel>/Wizard/Step2CostCenter}"
+                    valueLiveUpdate="true"
+                    required="true"
+                    class="sapUiSmallMarginBottom"
+                    maxLength="4"
+                    placeholder="{i18n>placeholder.wizard.step3}"
+                    showValueStateMessage="false"
+                    valueState="{applicationModel>/Wizard/Step2CostCenterState}"
+                ></TextArea>
+            <Label text="{i18n>lbl.verwendungszweck}"/>
+                <TextArea liveChange="onLiveChangeInputStep310Summary"
+                    id="txtStep10"
+                    value="{applicationModel>/Wizard/Step3Verwendung}"
+                    valueLiveUpdate="true"
+                    required="true"
+                    class="sapUiSmallMarginBottom"></TextArea>
+            <Label text="{i18n>lbl.at_art}"/>
+                <ComboBox change="onChangeComboBoxDerivateSummary"
+                            items="{applicationModel>/AtArtSet}"
+                            selectedKey=""
+                            editable="true"
+                            id="cboxDerivateSummary5">
+                            <c:Item key="{applicationModel>Value}" 
+                            text="{= ${applicationModel>Value} + ' - ' + ${applicationModel>Description} }"></c:Item>
+                </ComboBox>
+                
+                <Label text="{i18n>lbl.verwendervermerk}"/>
+                    <Input id="inputDerivateSummary6"
+                        value=""
+                        editable="true" 
+                        valueLiveUpdate="true"
+                        change="onChangeInputDerivateSummary6"/>
+
+                <c:Title text="" />
+                    <Label text="{i18n>lbl8.wizard1.step12}" required="true"></Label>
+                    <Label text="{i18n>lbl8.wizard1.step12}"/>
+                    <ComboBox id="comboStep10"
+                        value="{applicationModel>/Wizard/Step8SelectedDeliveryDetails/SelectedText}"
+                        required="true"
+                        valueState="None"
+                        change="onChangeComboBoxStep8Summary">
+                        <c:Item key="{i18n>text1.wizard1.step10}" text="{i18n>text1.wizard1.step10}" />
+                        <c:Item key="{i18n>text2.wizard1.step10}" text="{i18n>text2.wizard1.step10}" />
+                    </ComboBox>
+                    
+                    <Label text="{i18n>lbl.b-termin}" required="true"></Label>
+                    <Label text="{i18n>lbl.b-termin}"/>
+                        <DatePicker 
+                            id="datePickerStep10" 
+                            required="true"
+                            value="{applicationModel>/Wizard/Step8SelectedDeliveryDetails/SelectedDate}"
+                            change="onDatePickerStep8ChangeSummary"
+                            editable="true"
+                            displayFormat="dd/MM/yyyy"
+                            valueFormat="yyyy-MM-dd"
+                            minDate="{applicationModel>/minDate}"/>
+
+                    
+                <c:Title text="" />
+
+            <!-- Ersteller -->
+            <c:Title text="{i18n>text.ersteller}" />
+
+            <Label text="{i18n>text.qx}"
+                required="true" />
+            <Input value="{applicationModel>/Wizard/CurrentLoggedOnUser/QX}"
+                editable="{applicationModel>/bNotEditableSummaryFields}"></Input>
+            <Label text="{i18n>text.lastname}"></Label>
+            <Input value="{applicationModel>/Wizard/CurrentLoggedOnUser/Lastname}"
+                editable="{applicationModel>/bNotEditableSummaryFields}"></Input>
+            <Label text="{i18n>text.firstname}"></Label>
+            <Input value="{applicationModel>/Wizard/CurrentLoggedOnUser/Firstname}"
+                editable="{applicationModel>/bNotEditableSummaryFields}"></Input>
+            <Label text="{i18n>text.fachbereich}"></Label>
+            <Input value="{applicationModel>/Wizard/CurrentLoggedOnUser/Department}"
+                editable="{applicationModel>/bNotEditableSummaryFields}"></Input>
+            <Label text="{i18n>text.email}"></Label>
+            <Input value="{applicationModel>/Wizard/CurrentLoggedOnUser/Email}"
+                editable="{applicationModel>/bNotEditableSummaryFields}"></Input>
+
+
+            <!-- Verwender -->
+            <c:Title text="{i18n>text.verwender}"/>
+
+            <Label text="{i18n>text.qx}"
+                required="true" />
+            <Input value="{applicationModel>/Wizard/Step5Verwender/QX}"
+                showValueHelp="true"
+                valueHelpOnly="true"
+                valueHelpRequest="onVerwenderDetailsSelectionChange"
+                required="true"
+                editable="{applicationModel>/enableSummaryFields}"
+                id="qxVerwenderSummaryOption6"></Input>
+            <Label text="{i18n>text.lastname}"></Label>
+            <Input value="{applicationModel>/Wizard/Step5Verwender/Lastname}"
+                editable="{applicationModel>/bNotEditableSummaryFields}"></Input>
+            <Label text="{i18n>text.firstname}"></Label>
+            <Input value="{applicationModel>/Wizard/Step5Verwender/Firstname}"
+                editable="{applicationModel>/bNotEditableSummaryFields}"></Input>
+            <Label text="{i18n>text.fachbereich}"></Label>
+            <Input value="{applicationModel>/Wizard/Step5Verwender/Department}"
+                editable="{applicationModel>/bNotEditableSummaryFields}"></Input>
+            <Label text="{i18n>text.email}"></Label>
+            <Input value="{applicationModel>/Wizard/Step5Verwender/Email}"
+                editable="{applicationModel>/bNotEditableSummaryFields}"></Input>
+
+            <!-- Abgestimmt -->
+            <c:Title text="{i18n>text.abgestimmt}"/>
+
+            <Label text="{i18n>text.qx}" />
+                <Input value="{applicationModel>/Wizard/Step9SelectedUser/QX}"
+                    showValueHelp="true"
+                    valueHelpOnly="true"
+                    valueHelpRequest="onAbgestimmtDetailsSelectionChange"
+                    editable="{applicationModel>/enableSummaryFields}"
+                    id="qxAbgestimmtSummaryOption6"></Input>
+            <Label text="{i18n>text.lastname}"></Label>
+            <Input value="{applicationModel>/Wizard/Step9SelectedUser/Lastname}"
+                editable="{applicationModel>/bNotEditableSummaryFields}"></Input>
+            <Label text="{i18n>text.firstname}"></Label>
+            <Input value="{applicationModel>/Wizard/Step9SelectedUser/Firstname}"
+                editable="{applicationModel>/bNotEditableSummaryFields}"></Input>
+            <Label text="{i18n>text.fachbereich}"></Label>
+            <Input value="{applicationModel>/Wizard/Step9SelectedUser/Department}"
+                editable="{applicationModel>/bNotEditableSummaryFields}"></Input>
+            <Label text="{i18n>text.email}"></Label>
+            <Input value="{applicationModel>/Wizard/Step9SelectedUser/Email}"
+                editable="{applicationModel>/bNotEditableSummaryFields}"></Input>
+
+
+            <!-- Internal Receiver  -->
+            <c:Title text="{i18n>text1Form.wizard1.step9}"/>
+            <RadioButton id="rbReceiverBMWSummary"
+            select="handleReceiverChangeSummary"
+            groupName="receiverGroupSummary"
+            enabled="{applicationModel>/enableSummaryFields}"
+            selected="{= ${applicationModel>/RadioButtonSelected} === 'OptionA' }" />
+            <Label id = "InternalLabel" text="{i18n>text.qx}"
+                required="true" />
+            <Input showValueHelp="true"
+                editable="{applicationModel>/enabledBmwReceiver}"
+                valueHelpRequest="onPressOpenSearchDialogSummaryOption6"
+                valueHelpOnly="true"
+                enabled="{applicationModel>/enableSummaryFields}"
+                value="{applicationModel>/Wizard/Step7SelectedInternalUser/QX}" />
+            <Label text="{i18n>text.lastname}"/>
+            <Input editable="{applicationModel>/enabledBmwReceiverInputs}"
+                enabled="{applicationModel>/enableSummaryFields}"
+                value="{applicationModel>/Wizard/Step7SelectedInternalUser/Lastname}" />
+            <Label text="{i18n>text.firstname}"/>
+            <Input editable="{applicationModel>/enabledBmwReceiverInputs}"
+                enabled="{applicationModel>/enableSummaryFields}"
+                value="{applicationModel>/Wizard/Step7SelectedInternalUser/Firstname}" />
+            <Label text="{i18n>text.fachbereich}"/>
+            <Input editable="{applicationModel>/enabledBmwReceiverInputs}"
+                enabled="{applicationModel>/enableSummaryFields}"
+                value="{applicationModel>/Wizard/Step7SelectedInternalUser/Department}" />
+            <Label text="{i18n>text.email}"/>
+            <Input editable="{applicationModel>/enabledBmwReceiverInputs}"
+                enabled="{applicationModel>/enableSummaryFields}"
+                value="{applicationModel>/Wizard/Step7SelectedInternalUser/Email}" />
+            <Label text="{i18n>text.phone}"
+                id="lblInternal6Phone" />
+            <Input editable="{applicationModel>/enabledBmwReceiverInputs}"
+                enabled="{applicationModel>/enableSummaryFields}"
+                value="{applicationModel>/Wizard/Step7SelectedInternalUser/PhoneNr}" />
+                <Label text="{i18n>text.bauort}" id="lblInternal6Bauort"/>
+                    <Input id="inputBauortWizard6"
+                           showValueHelp="true"
+                           editable="{applicationModel>/enabledBmwReceiverInputs}"
+                           valueHelpRequest="onPressExternalAdressDialogStandortSummaryOption6"
+                           enabled="{applicationModel>/enableSummaryFields}"
+                           value="{applicationModel>/Wizard/Step7SelectedInternalUserStandort/ConstructionSite}">
+                    </Input>
+                    
+                    <Label text="{i18n>text.standort}" id="lblInternal6Standort"/>
+                    <Input id="inputStandortWizard6"
+                           showValueHelp="true"
+                           editable="{applicationModel>/enabledBmwReceiverInputs}"
+                           valueHelpRequest="onPressExternalAdressDialogStandortSummaryOption6"
+                           enabled="{applicationModel>/enableSummaryFields}"
+                           value="{applicationModel>/Wizard/Step7SelectedInternalUserStandort/LocationPart}">
+                    </Input>                    
+            <Label text="{i18n>text.building}"
+                id="lblInternal6Building"/>
+            <Input editable="{applicationModel>/enabledBmwReceiverInputs}"
+                enabled="{applicationModel>/enableSummaryFields}"
+                value="{applicationModel>/Wizard/Step7SelectedInternalUserStandort/Building}">
+            </Input>
+            <Label text="{i18n>text.room_number}"
+                id="lblInternal6Room"/>
+            <Input editable="{applicationModel>/enabledBmwReceiverInputs}"
+                enabled="{applicationModel>/enableSummaryFields}"
+                value="{applicationModel>/Wizard/Step7SelectedInternalUserStandort/RoomNumber}">
+            </Input>
+            <Label text="{i18n>text.debitorennummer}"/>
+            <Input id="inputDebitorenSummaryOption6"
+                editable="false"
+                enabled="false"
+                value="{applicationModel>/Wizard/Step7SelectedInternalUserStandort/Sup_Cust_nr}">
+            </Input>
+
+            <!-- External Receiver  -->
+            <c:Title text="{i18n>text2Form.wizard1.step9}"/>
+            <RadioButton id="rbReceiverBBAOption6Summary"
+            select="handleReceiverChangeOption6Summary"
+            groupName="receiverGroupSummaryOption6"
+            enabled="{applicationModel>/enableSummaryFields}"
+            selected="{= ${applicationModel>/RadioButtonSelected} === 'OptionB' }" />
+            <Label id = "SupplierLabel" text="{i18n>text.supplier}"
+                required="true" />
+            <Input showValueHelp="true"
+                valueHelpRequest="onPressOpenExternalSearchDialogSummaryOption6"
+                valueHelpOnly="true"
+                editable="{applicationModel>/enabledExternalReceiver}"
+                enabled="{applicationModel>/enableSummaryFields}"
+                value="{applicationModel>/Wizard/Step7SelectedExternalReceiver/Sup_Cust_nr}" />
+            <Label text="{i18n>text.company}"/>
+            <Input editable="false"
+                id="inputExternalSummaryFirmaOption6"
+                value="{applicationModel>/Wizard/Step7SelectedExternalReceiver/Department}" />
+            <Label text="{i18n>text.street}"/>
+            <Input editable="false"
+                id="inputExternalSummaryStreetOption6"
+                value="{applicationModel>/Wizard/Step7SelectedExternalReceiver/Street}" />
+            <Label text="{i18n>text.country_zip_place}"/>
+            <Input editable="false"
+                id="inputExternalSummaryLandOption6"
+                value="{applicationModel>/Wizard/Step7SelectedExternalReceiver/Country_ZIP_Place}" />
+            <Label text="{i18n>text.contact}"/>
+            <Input editable="{applicationModel>/enabledExternalReceiver}"
+                enabled="{applicationModel>/enableSummaryFields}"
+                id="inputExternalSummaryContactPersonOption6"
+                value="{applicationModel>/Wizard/Step7SelectedExternalReceiver/Contact_Person}" />
+            <Label text="{i18n>text.phone}"/>
+            <Input editable="{applicationModel>/enabledExternalReceiver}"
+                enabled="{applicationModel>/enableSummaryFields}"
+                id="inputExternalSummaryPhoneOption6"
+                value="{applicationModel>/Wizard/Step7SelectedExternalReceiver/Phone}" />
+        </form:SimpleForm>
+
+        <Button text="{i18n>btn.pw_erstellen}"
+            id="btnCreatePW"
+            press="onPressCreateSummaryHeader"
+            class="sapUiSmallMarginBottom"></Button>
+
+    </WizardStep>
+
+      <!--WIZZARD 11-->
+    <WizardStep id="wizard_11"
+    validated="false"
+    activate="onActivateStep11"
+    complete="onPressNextStep11"
+    title="{i18n>text.wizard1.step13}">
+
+    <!-- VBox to contain the Plus button, the Table, and the bottom buttons -->
+    <VBox>
+        <!-- HBox to contain the Plus button -->
+        <HBox>
+            <Button
+                id="ButtonPlus11"
+                icon="sap-icon://add"
+                type="Ghost"
+                press="onPressPlusStep11"
+                class="sapUiTinyMarginTopBottom sapUiTinyMarginBegin"
+            />
+        </HBox>
+
+        <!-- Table -->
+        <Table id="tableWizzardStep11"
+            items="{applicationModel>/step11Data}"
+            mode="SingleSelectMaster"
+            height="auto"
+            itemPress="onPressWizzard11Select"
+            visible="{applicationModel>/showTable}"
+        >
+            
+            <!-- Columns -->
+            <columns>
+                <Column>
+                    <Label text="{i18n>lbl.part_number}" required="true" />
+                </Column>
+                <Column>
+                    <Label text="{i18n>lbl.ai_valid}" />
+                </Column>
+                <Column>
+                    <Label text="{i18n>lbl.ai_deviant}" required="true" />
+                </Column>
+                <Column>
+                    <Label text="{i18n>lbl.ko_gruppe}" />
+                </Column>
+                <Column>
+                    <Label text="{i18n>lbl.module}" required="true" />
+                </Column>
+                <Column>
+                    <Label text="{i18n>lbl.modul_org}" required="true" />
+                </Column>
+                <Column>
+                    <Label text="{i18n>lbl.identnummer}" />
+                </Column>
+                <Column>
+                    <Label text="{i18n>lbl.comm}" />
+                </Column>
+                <Column>
+                    <Label text="{i18n>lbl.stuck_auslosung}" required="true" />
+                </Column>
+                <Column>
+                    <Label text="{i18n>lbl.loschen}" />
+                </Column>
+            </columns>
+            
+            <!-- Items -->
+            <items>
+                <ColumnListItem type="Active">
+                    <cells>
+                        <VBox visible="{= ${applicationModel>/showInputs} }">
+                            <HBox>
+                                <Input id="inputPartId"
+                                    value="{applicationModel>partNumber}" 
+                                    change="onInputChange"
+                                    maxLength="7"
+                                    placeholder="Enter part number"
+                                    valueLiveUpdate="true"
+                                    showValueStateMessage="true"
+                                    enabled="{applicationModel>partNumberEnabled}" />
+                                <Button id="refreshButtonStep11" icon="sap-icon://refresh" type="Ghost" press="onRefreshButtonPress" enabled="{applicationModel>partNumberValid}" />
+                            </HBox>
+                            <Input value="{applicationModel>additionalPartNumber}" enabled="{applicationModel>additionalPartNumberEnabled}" />
+                        </VBox>
+                        <Input id ="input211" value="{applicationModel>aiValid}" enabled="{applicationModel>aiValidEnabled}" />
+                        <Input id ="input311" value="{applicationModel>aiDeviant}" enabled="{applicationModel>aiDeviantEnabled}" liveChange="onAiDeviantChange" change="onAiDeviantChange" />
+                        <Input id ="input411" value="{applicationModel>koGruppe}" enabled="{applicationModel>koGruppeEnabled}" change = "onKoGrouppeChange" />
+                        <Input id ="input511" value="{applicationModel>module}" enabled="{applicationModel>moduleEnabled}" />
+                        <ComboBox id ="input611" value="{applicationModel>modulOrg}" enabled="{applicationModel>modulOrgEnabled}" />
+                        <Input id ="input711" value="{applicationModel>identnummer}" enabled="{applicationModel>identnummerEnabled}" />
+                        <Input id ="input811" value="{applicationModel>comm}" enabled="{applicationModel>commEnabled}" />
+                        <Input id ="input911" value="{applicationModel>stuckAuslosung}" enabled="{applicationModel>stuckAuslosungEnabled}" liveChange = "onStuckChange" change = "onStuckChange" />
+                        <Button id="deleteButtonRow11" icon="sap-icon://delete" type="Reject" press="onDeleteRow"/>
+                    </cells>
+                </ColumnListItem>
+            </items>
+        </Table>
+
+        <!-- HBox to contain the bottom buttons -->
+        <HBox alignItems="Center" class="sapUiTinyMarginTop" visible="{applicationModel>/showButtons}">
+            <Button
+                id="buttonSaveWizzard11"
+                icon="sap-icon://save"
+                text="{i18n>btn.speichern}"
+                type="Emphasized"
+                enabled="{applicationModel>/enableSaveButton}"
+                press="onPressSave"
+                class="sapUiTinyMarginEnd"
+            />
+            <Button
+                id="buttonUserCheckWizzard11"
+                icon="sap-icon://employee-approvals"
+                text="{i18n>btn.genehmigung}"
+                type="Emphasized"
+                enabled="{applicationModel>/enableUserCheckButton}"
+                press="onPressUserCheck"
+            />
+        </HBox>
+    </VBox>
+</WizardStep>
+
+</c:FragmentDefinition>

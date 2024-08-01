@@ -1,0 +1,91 @@
+<core:FragmentDefinition xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+    xmlns:l="sap.ui.layout"
+    xmlns:filterbar="sap.ui.comp.filterbar">
+
+    <Dialog id="ExternalAdressDialog" title="{i18n>text.bauort}" class="sapUiContentPadding">
+
+        <!-- FilterBar for filtering items -->
+        <filterbar:FilterBar id="filterBarExternalUserAdress"
+            showClearOnFB="true"
+            visible="true"
+            clear = "onPressClearExternalSelectDetails"
+            search="onExternalSelectionSearchFilter">
+            
+            <!-- Filter group items -->
+            <filterbar:filterGroupItems>
+                <filterbar:FilterGroupItem groupName="ExternalAdressSearch"
+                    name="ConstructionSite"
+                    label="{i18n>text.construction_site}"
+                    visibleInFilterBar="true">
+                    <filterbar:control>
+                        <Input value="{applicationModel>/ConstructionSite}" submit="onSearchFilter" />
+                    </filterbar:control>
+                </filterbar:FilterGroupItem>
+                <filterbar:FilterGroupItem groupName="ExternalAdressSearch"
+                    name="LocationPart"
+                    label="{i18n>text.location_part}"
+                    visibleInFilterBar="true">
+                    <filterbar:control>
+                        <Input value="{applicationModel>/LocationPart}" submit="onSearchFilter" />
+                    </filterbar:control>
+                </filterbar:FilterGroupItem>
+                <filterbar:FilterGroupItem groupName="ExternalAdressSearch"
+                    name="LocationDescription"
+                    label="{i18n>text.location_description}"
+                    visibleInFilterBar="true">
+                    <filterbar:control>
+                        <Input value="{applicationModel>/LocationDescription}" submit="onSearchFilter" />
+                    </filterbar:control>
+                </filterbar:FilterGroupItem>
+                <filterbar:FilterGroupItem groupName="ExternalAdressSearch"
+                    name="Sup_Cust_nr"
+                    label="{i18n>text.sup_cust_nr}"
+                    visibleInFilterBar="true">
+                    <filterbar:control>
+                        <Input value="{applicationModel>/Sup_Cust_nr}" submit="onSearchFilter" />
+                    </filterbar:control>
+                </filterbar:FilterGroupItem>
+            </filterbar:filterGroupItems>
+        </filterbar:FilterBar>
+
+        <!-- Table to display filtered items -->
+        <Table id="tableExternalAdressSelection"
+            items="{applicationModel>/LocationDetailsSet}"
+            mode="SingleSelectMaster"
+            selectionChange="onExternalAdressSelectionChange">
+            <columns>
+                <Column>
+                    <Text text="{i18n>text.construction_site}" />
+                </Column>
+                <Column>
+                    <Text text="{i18n>text.location_part}" />
+                </Column>
+                <Column>
+                    <Text text="{i18n>text.location_description}" />
+                </Column>
+                <Column>
+                    <Text text="{i18n>text.sup_cust_nr}" />
+                </Column>
+            </columns>
+            <items>
+                <ColumnListItem type="Active">
+                    <cells>
+                        <Text text="{applicationModel>ConstructionSite}" />
+                        <Text text="{applicationModel>LocationPart}" />
+                        <Text text="{applicationModel>LocationDescription}" />
+                        <Text text="{applicationModel>Sup_Cust_nr}" />
+                    </cells>
+                </ColumnListItem>
+            </items>
+        </Table>
+
+        <!-- Begin and End buttons for Dialog -->
+        <beginButton>
+            <Button text="{i18n>txt.search}" press="onExternalDialogClose" type="Accept" />
+        </beginButton>
+        <endButton>
+            <Button text="{i18n>btn.cancel}" press="onExternalDialogClose" type="Reject" />
+        </endButton>
+    </Dialog>
+</core:FragmentDefinition>

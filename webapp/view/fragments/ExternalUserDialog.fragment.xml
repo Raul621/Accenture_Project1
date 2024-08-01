@@ -1,0 +1,115 @@
+<core:FragmentDefinition xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+    xmlns:l="sap.ui.layout"
+    xmlns:filterbar="sap.ui.comp.filterbar">
+
+    <Dialog id="ExternalUserDialog" title="{i18n>text2Form.wizard1.step9}" class="sapUiContentPadding">
+
+        <!-- FilterBar for filtering items -->
+        <filterbar:FilterBar id="filterBarExternalUser"
+            showClearOnFB="true"
+            visible="true"
+            clear = "onClearExternalUserSelect"
+            search="onSearchExternalUserSelect">
+            
+            <!-- Filter group items -->
+            <filterbar:filterGroupItems>
+                <filterbar:FilterGroupItem groupName="ExternalUserSearch"
+                    name="Sup_Cust_nr"
+                    label="{i18n>text.supplier}"
+                    visibleInFilterBar="true">
+                    <filterbar:control>
+                        <Input value="{applicationModel>/Sup_Cust_nr}" submit="onSearchFilter" />
+                    </filterbar:control>
+                </filterbar:FilterGroupItem>
+                <filterbar:FilterGroupItem groupName="ExternalUserSearch"
+                    name="Department"
+                    label="{i18n>text.department}"
+                    visibleInFilterBar="true">
+                    <filterbar:control>
+                        <Input value="{applicationModel>/Department}" submit="onSearchFilter" />
+                    </filterbar:control>
+                </filterbar:FilterGroupItem>
+                <filterbar:FilterGroupItem groupName="ExternalUserSearch"
+                    name="Street"
+                    label="{i18n>text.street}"
+                    visibleInFilterBar="true">
+                    <filterbar:control>
+                        <Input value="{applicationModel>/Street}" submit="onSearchFilter" />
+                    </filterbar:control>
+                </filterbar:FilterGroupItem>
+                <filterbar:FilterGroupItem groupName="ExternalUserSearch"
+                    name="Country_ZIP_Place"
+                    label="{i18n>text.country_zip_place}"
+                    visibleInFilterBar="true">
+                    <filterbar:control>
+                        <Input value="{applicationModel>/Country_ZIP_Place}" submit="onSearchFilter" />
+                    </filterbar:control>
+                </filterbar:FilterGroupItem>
+                <filterbar:FilterGroupItem groupName="ExternalUserSearch"
+                    name="Contact_Person"
+                    label="{i18n>text.contact}"
+                    visibleInFilterBar="true">
+                    <filterbar:control>
+                        <Input value="{applicationModel>/Contact_Person}" submit="onSearchFilter" />
+                    </filterbar:control>
+                </filterbar:FilterGroupItem>
+                <filterbar:FilterGroupItem groupName="ExternalUserSearch"
+                    name="Phone"
+                    label="{i18n>text.phone}"
+                    visibleInFilterBar="true">
+                    <filterbar:control>
+                        <Input value="{applicationModel>/Phone}" submit="onSearchFilter" />
+                    </filterbar:control>
+                </filterbar:FilterGroupItem>
+            </filterbar:filterGroupItems>
+        </filterbar:FilterBar>
+
+        <!-- Table to display filtered items -->
+        <Table id="tableExternalUserSelection"
+            items="{applicationModel>/External_receiverSet}"
+            mode="SingleSelectMaster"
+            selectionChange="onExternalUserSelectionChange">
+            <columns>
+                <Column>
+                    <Text text="{i18n>text.supplier}" />
+                </Column>
+                <Column>
+                    <Text text="{i18n>text.department}" />
+                </Column>
+                <Column>
+                    <Text text="{i18n>text.street}" />
+                </Column>
+                <Column>
+                    <Text text="{i18n>text.country_zip_place}" />
+                </Column>
+                <Column>
+                    <Text text="{i18n>text.contact}" />
+                </Column>
+                <Column>
+                    <Text text="{i18n>text.phone}" />
+                </Column>
+            </columns>
+            <items>
+                <ColumnListItem type="Active">
+                    <cells>
+                        <Text text="{applicationModel>Sup_Cust_nr}" />
+                        <Text text="{applicationModel>Department}" />
+                        <Text text="{applicationModel>Street}" />
+                        <Text text="{applicationModel>Country_ZIP_Place}" />
+                        <Text text="{applicationModel>Contact_Person}" />
+                        <Text text="{applicationModel>Phone}" />
+                    </cells>
+                </ColumnListItem>
+            </items>
+        </Table>
+
+        <!-- Begin and End buttons for Dialog -->
+        <beginButton>
+            <Button text="{i18n>txt.search}" press="onExternalUserSelectionDialogClose" type="Accept" />
+        </beginButton>
+        <endButton>
+            <Button text="{i18n>btn.cancel}" press="onExternalUserSelectionDialogClose" type="Reject" />
+        </endButton>
+    </Dialog>
+</core:FragmentDefinition>

@@ -1,0 +1,39 @@
+<mvc:View controllerName="project1.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+    xmlns:c="sap.ui.core">
+    <Page id="page" title="{i18n>title}">
+        <content>
+            <Wizard id="wizard" enableBranching="true" complete="onPressResetWizard">
+                <WizardStep validated="false" 
+                id="step1"
+                subsequentSteps = "wizard_1_2,wizard_2_2,wizard_3_2"
+                complete="onPressNextStep1"
+                title="{i18n>text.wizard1.step1}">
+                    <GenericTile id="tile1" press="onPressTile"  class="sapUiTinyMarginBeginEnd sapUiTinyMarginTop sapUiSmallMarginBottom" header="{i18n>text.tile1}">
+                        <TileContent>
+                            <ImageContent src="sap-icon://line-charts" />
+                        </TileContent>
+                    </GenericTile>
+                    <GenericTile id="tile2" press="onPressTile"  class="sapUiTinyMarginBeginEnd sapUiTinyMarginTop sapUiSmallMarginBottom" header="{i18n>text.tile2}">
+                        <TileContent>
+                            <ImageContent src="sap-icon://line-charts" />
+                        </TileContent>
+                    </GenericTile>
+                    <GenericTile id="tile3" press="onPressTile"  class="sapUiTinyMarginBeginEnd sapUiTinyMarginTop sapUiSmallMarginBottom" header="{i18n>text.tile3}">
+                        <TileContent>
+                            <ImageContent src="sap-icon://line-charts" />
+                        </TileContent>
+                    </GenericTile>
+                </WizardStep>
+                
+                <!-- Fragments for further steps if required -->
+                <c:Fragment fragmentName="project1.view.fragments.wizardOption2" type="XML" />
+                <c:Fragment fragmentName="project1.view.fragments.wizardOption3" type="XML" />
+                <c:Fragment fragmentName="project1.view.fragments.wizardOption1" type="XML" />
+                
+            </Wizard>
+        </content>
+    </Page>
+</mvc:View>
